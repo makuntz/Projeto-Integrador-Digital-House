@@ -1,0 +1,104 @@
+#logotipo{
+    display: flex;
+    block-size: 80px;
+    padding-left: 110px ;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+
+#carrinho{
+    display: flex;
+    block-size: 80px;
+    padding-right: 110px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.linhas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 15px;
+
+}
+
+.cinza{
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+
+
+}
+
+.branco{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+
+}
+
+#balao{
+    width: 20px;
+    height: 30px;
+    margin-top: 0.3rem;
+    margin-left: 20px;
+
+}
+
+p{
+    margin-left: 20px;
+    
+}
+
+#dinheiro{
+    width: 30px;
+    height: 20px;
+    margin-top: 0.8rem;
+    margin-left: 20px;
+}
+
+#cartao{
+    width: 30px;
+    height: 20px;
+    margin-top: 0.8rem;
+    margin-left: 20px;
+}
+
+#cartaoButton{
+    width: 15px;
+    height: 10px;
+}
+
+#cadastro{
+    padding-bottom: 2rem;
+}
+
+#pedido{
+    width: 25px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 00.8rem;
+}
+
+#pEntregaSubtotal{
+    margin-top: 0.1rem;
+}
+
+#enviarPedido{
+    background-color: #FFA500; 
+    border-radius: 10rem;
+    margin-left: 30rem;
+    width: 200px;
+    height: 50px;
+}
+
+#voltarCarrinho{
+    background-color: #FFA500;
+    border-radius: 10rem;
+    margin-left: 3rem;
+    width: 200px;
+    height: 50px;
+}

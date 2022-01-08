@@ -1,0 +1,60 @@
+.icones{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+#master{
+    width: 50px;
+    height: 30px;
+}
+
+#visa{
+    width: 50px;
+    height: 30px;
+    
+}
+
+#elo{
+    width: 50px;
+    height: 30px;
+}
+
+#facebook{
+    width: 40px;
+    height: 30px;
+
+}
+
+#instagram{
+    width: 40px;
+    height: 30px;
+}
+
+#whatsapp{
+    width: 40px;
+    height: 30px;
+}
+
+#email{
+    width: 40px;
+    height: 30px;
+}
+
+#logofooter{
+    width: 60px;
+    height: 60px;
+}
+
+
+#mapa{
+    padding-left: 50px;
+    width: 120px;
+    height: 60px;
+}
+
+#pFooter{
+    font-size: 10px;
+    padding-left: 2rem;
+    padding-top: 0.3rem;
+}
