@@ -24,7 +24,10 @@
             <p>Confirme seu endereço:</p>
         </div>
         <div class="branco">
-            <p>CEP:00000-000   Rua: Teste, 000   Complemento: </p>
+            <label for="CEP" id="cep">CEP:</label>
+            <input type="text" id="cep2">
+            <button id="ok">Ok</button>
+            <p>Rua: Teste, 000 -  Complemento: </p>
         </div> 
         <div class="cinza">
             <img src="imagens/dinheiro.png" alt="dinheiro" id="dinheiro">
@@ -51,9 +54,8 @@
         </div> 
         <div class="branco">
             <p>TOTAL</p>
-        </div> 
-        <div class="cinza">
-        </div>   
+        </div>
+        
         <div class= "branco">
             <p><button id="voltarCarrinho">Voltar para o Carrinho</button><button id="enviarPedido">Enviar Pedido</button></p>
         </div>
@@ -63,21 +65,34 @@
         <div class="icones">
             <img src="imagens/logo.jpeg" alt="logo" id="logofooter">
         </div>
-        <p id="pFooter">Telefone (00) 0000-0000<br>Rua teste, 00<br>Jd Teste<br>Teste/TT</p>
-        <div class="icones">
+       
+        <div class="icones" id="endereco">
+            <p id="pFooter">Telefone (00) 0000-0000<br>Rua teste, 00<br>Jd Teste<br>Teste/TT</p>
             <img src="imagensFooter/localizacao.jpeg" alt="mapa" id="mapa">
         </div>
-        <div class="icones">
-            <img src="imagensFooter/mastercard.jpeg" alt="cartao master" id="master">
-            <img src="imagensFooter/visa.jpeg" alt="cartao visa" id="visa">
-            <img src="imagensFooter/elo.jpeg" alt="elo" id="elo">        
+
+        <div id="tiposPagamento">
+            <div>
+                <p id="p1">Tipos de pagamento</p>
+            </div>
+            <div class="icones">
+                <img src="imagensFooter/mastercard.jpeg" alt="cartao master" id="master">
+                <img src="imagensFooter/visa.jpeg" alt="cartao visa" id="visa">
+                <img src="imagensFooter/elo.jpeg" alt="elo" id="elo">        
+            </div>
         </div>
-        <div class="icones">
-            <img src="imagensFooter/facebook.jpeg" alt="facebook" id="facebook">
-            <img src="imagensFooter/instagram.jpeg" alt="instagram" id="instagram">
-            <img src="imagensFooter/whatsapp.jpeg" alt="whatsapp" id="whatsapp">
-            <img src="imagensFooter/email.jpeg" alt="email" id="email">
+        <div id="compartilhe">
+            <div>
+                <p id="p2">Compartilhe</p> 
+            </div>
+            <div class="icones">
+                <img src="imagensFooter/facebook.jpeg" alt="facebook" id="facebook">
+                <img src="imagensFooter/instagram.jpeg" alt="instagram" id="instagram">
+                <img src="imagensFooter/whatsapp.jpeg" alt="whatsapp" id="whatsapp">
+                <img src="imagensFooter/email.jpeg" alt="email" id="email">
+            </div>
         </div>
+        
     </footer>
 </body>
 </html>
