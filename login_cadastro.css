@@ -1,0 +1,319 @@
+
+
+:root{
+	--r: 50;
+	--g: 170;
+	--b: 08;
+	--accent: #ffa500;
+	--primary: #000;
+	--gradient-shadow: #999;
+	--title: #fff;
+	--text: #333;
+	--input: #e0dede;
+	--input-text: #555;
+	--bgg: #eee;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var( --input-text );
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: var( --input-text );
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	color:var( --input-text );
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scaffold{
+	display: grid;
+	min-width: 100vw;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.6;
+	background-repeat: no-repeat;
+}
+
+.appBar {
+    margin-bottom: auto;
+    width: 100%;
+    height: 60px;
+    background-color: var( --primary );
+    grid-area: 1 / 1;
+}
+#lgbtn {
+    margin-bottom: auto;
+    padding: 3px;
+    width: 150px;
+}
+
+.card-l-container{
+    /* grid-area: 1 / 1; */
+/*	margin-top: 20vh;
+	margin-right: 25%;*/
+	/*display: none;*/
+	/* padding-left: 50vw;
+	padding-right: 50vw; */
+	background: rgba( 80, 80, 80, .50);
+	display: grid;
+	place-items: center;
+	visibility: hidden;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	/* top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% ); */
+	z-index: 3;
+	/*
+	flex-direction: columm;
+	justify-content: center;
+	align-items: center;*/
+	/*min-height: 100vh;*/
+	font-family: 'Poppins', sans-serif;
+	/*width: 100vw;
+	height: 100vh;*/
+}
+
+.card-l{
+	max-width: 550px;         /*  450px; */
+	height: 0px;        /*  500px; */
+	min-width: 450px;
+	min-height: 500px;
+	background: linear-gradient(to bottom, var( --accent ), var( --accent ), var( --primary ) );
+/* 	background: url( './' ) no-repeat center/ cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%; */
+	overflow: hidden;
+    transition: .3s;
+	border-radius: 25px;
+	box-shadow: 5px 20px 50px var( --primary );
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+}
+#chk{
+	display: none;
+}
+
+.formTextBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 3ch;
+	background-color: none;
+	line-height: 0.5;
+}
+
+.sbutton{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: var( --title );
+	background: var( --primary );
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 15px;
+	outline: none;
+	border: none;
+	border-radius: 22px;
+	transition: .7s; /* ease-in; */
+	cursor: pointer;
+}
+.sbutton:hover{
+	background: var( --accent );
+	width: 61%;
+	height: 41px;
+	box-shadow: 0px 0px 5px 0px var( --primary );
+	color:var( --primary );
+	font-size: 1.2em;
+	transition: .2s;
+}
+
+#manterLogado{
+	max-width: 18px;
+	margin-right: 6px;
+}
+#manterLogado:checked ~ p{
+	font-weight: bold;
+}
+
+.keep{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#forgotPass{
+	color: var( --input );
+}
+#forgotPass:hover {
+	color: var( --primary);
+}
+
+.times-holder{
+	width: 90%;
+	max-height: 16px;
+	margin-bottom: -13px;
+	padding: 0;
+	display: flex;
+	justify-content: end;
+}
+.times{
+	cursor: pointer;
+	font-weight: 900;
+	font-size: 1.6rem;
+	transition-duration: .8s;
+}
+.times:hover{
+	text-shadow: -5px 4px 5px var(--primary );
+	transition-duration: .2s;
+}
+
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* sign-in
+***************************************************************************** */
+
+.sign-in{
+	/* position: relative; */
+	width:		/* 33vw; */			100%;
+	min-width: 450px;
+	height: 	/* 33vh; */		50%;
+    color: var( --bgg );
+}
+.sign-in form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.sign-in input {
+    width: 60%;
+    height: 5ch;
+    background: var(--input);
+    justify-content: center;
+    display: flex;
+    margin: 16px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.sign-inFormLabel{
+	color: var( --title );
+	font-size: 2.3em;
+	text-shadow: 0px 0px 1px var(--primary );
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 8%; /* 50px */
+	font-weight: bold;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+.sign-inFormLabel:hover{
+	/* text-shadow: 0px 0px 20px var( --primary ) ; */
+	/* text-decoration: underline; */
+	/* text-decoration-color: var( --primary ); */
+    /* color: var( --primary ); */
+	text-shadow: -5px 4px 5px var(--primary );
+}
+.sign-in a{
+    font-style: oblique;
+    color: var(--input);
+}
+.sign-in a:hover{
+	text-shadow: 0 0 10px var( --primary );
+}
+
+
+
+/* 	sign-up
+***************************************************************************** */
+
+.sign-up{
+	height: /* 33vh; */		/* 90vh; */	560px;
+	max-width: 33vw;
+	min-width: 450px;
+	background: var( --primary ); /* var( --bgg ); */
+	border-radius: /* 60% / 10%; */ 50% / 8%;
+	transform: translateY( 194px );		/* ( 210px ); */		/* ( -170px ); */	
+	transition: .5s ease-in-out;
+}
+.sign-up form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up input {
+    width: 60%;
+    height: 5ch;
+    background: var(--input);
+    justify-content: center;
+    display: flex;
+    margin: 16px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.sign-up label{
+	color: var( --accent );
+	transform: scale( .6 );
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.sign-upFormLabel{
+	color: var( --title );
+	font-size: 2.3em;
+	text-shadow: 0px 0px 2px var( --gradient-shadow );
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 50px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .1s ease-in-out;
+}
+.sign-upFormLabel:hover{
+	/* text-decoration: underline; */
+	text-decoration-color: var( --primary );
+    text-shadow: 0px 0px 30px var( --accent );
+    color: var( --bgg );
+}
+
+#chk:checked ~ .sign-up{
+	transform: translateY( -166px );		/* ( -130px ); */			/* ( -510px ); */
+}
+#chk:checked ~ .sign-up label{
+	transform: scale( 1 );	
+}
+#chk:checked ~ .sign-up{
+    background: var( --bgg );
+}
+#chk:checked ~ .sign-in .sign-inFormLabel{
+	transform: scale( .6 );
+}
+
+
+
+.clear{
+    clear: both;
+}
