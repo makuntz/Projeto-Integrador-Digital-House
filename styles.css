@@ -1,0 +1,157 @@
+
+
+:root {
+    --primary: #1b1d21;
+    --secondary: #212329;
+    --accent: #ff9e00;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 0 0 .5px rgb(0 0 0 / 1);
+}
+
+body {
+    background: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    color: #bebebe;
+}
+
+
+
+
+/* -------------   appbar  ------------ */
+appbar {
+    background: #1b1d21;
+    display: flex;
+    align-items: center;
+    height: 15vw;
+    box-shadow: 0 0 9px rgb(0 0 0 / .8);
+    position: sticky;
+    top: 0;
+}
+
+appbar input {
+    background: goldenrod;
+    height: 50%;
+    margin: 1ch 2ch 1ch auto;
+    padding: 0 10ch;
+    border-style: none;
+    border-radius: .5rem;
+}
+
+
+
+/* -------------   header  ------------ */
+header {
+    background: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    height: 54vw;
+}
+
+#cardd {
+    visibility: hidden;
+}
+
+#btnAppbar {
+    width: 90%;
+    margin: 8vw 0;
+    padding: 2vw 6vw;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+
+
+
+
+
+/* -------------   main  ------------ */
+main {
+    background: #fff;
+    width: 96%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+/* -------------   footer  ------------ */
+footer {
+    background-color: #1b1d21;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 15vw;
+    margin: auto 0 0 0;
+}
+
+
+
+
+/* -------------  @media --------------
+				800px				*/
+@media screen and ( min-width: 800px ) {
+	
+	body {
+    
+	}
+
+
+	/* -------------   appbar  ------------ */
+	appbar {
+    
+	}
+
+	appbar input {
+    
+	}
+
+
+	/* -------------   header  ------------ */
+	header {
+    
+	}
+
+	#cardd {
+    
+	}
+
+	#btnAppbar {
+    
+	}
+
+
+	/* -------------   main  ------------ */
+	main {
+    
+	}
+
+
+	/* -------------   footer  ------------ */
+	footer {
+    
+	}
+	
+}
