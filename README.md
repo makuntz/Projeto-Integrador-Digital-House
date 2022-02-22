@@ -12,7 +12,7 @@
 
 ### >>> ${ [Alan Pinheiro](https://github.com/alanhspinheiro/) }
 
-### >>> ${ [TiMadureira](https://github.com/TiMadureira/) }
+- ### >>> ${ [TiMadureira](https://github.com/TiMadureira/) }
 
 ---
 <p align="left"><img src="https://komarev.com/ghpvc/?username=ceo" alt="ceo" /></p>
