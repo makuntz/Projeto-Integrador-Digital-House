@@ -92,6 +92,15 @@
             color: var(--card);
             padding: 12px 0 12px 0;
         }
+        appbar span {
+            width: 15%;
+            transition: .3s ease-out;
+            padding: 1ch;
+            text-align: center; color: #ff9e00; line-height: .4; font-size: 2.2rem; font-weight: 800;
+        }
+        appbar span:hover {
+            color: #ccc; text-shadow: 0 0 5px#1122ff; transition: .5s ease-in;
+        }
 
         .container-bg{ 
             padding: 12px 12px 12px 12px;
@@ -125,8 +134,6 @@
                 /* overflow-y: scroll; */
             }
         }
-/*  */
-        
         
     </style>
     
@@ -135,10 +142,10 @@
 <body class="container-body"> 
     
 
-    <appbar>appbar
-        <div class="appbar-btn" onclick="openNavDrawer()">
-           <p> &#9776; </p>
-        </div>
+    <appbar>
+        <span onclick="openNavDrawer()">
+            &#9776;
+        </span>
     </appbar>
 
 
