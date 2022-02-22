@@ -30,59 +30,29 @@
             
         }
 
-        ::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background-color: none; /* rgba(90, 90, 90); */
-        }
-        ::-webkit-scrollbar-track {
-            background-color: none; /* rgba(0, 0, 0, 0.5); */
-        }
+        
         
         body{
             /* background-color: var( --accent ); */
-            background: linear-gradient(
+            /* background: linear-gradient(
                 hsla( 43 100% 50% / 1 ),
                 hsla( 43 100% 50% / 1 ) 20%,
                 hsla( 0 0% 10% / 1) ,
                 hsla( 0 0% 0% / 1)
+            ); */
+            background: linear-gradient(
+                27deg,
+                #ff5000,
+                #1122ff,
+                #ff1122
             );
             background-repeat: no-repeat;
             background-size: 100%;
-            /* background: linear-gradient( 
-                hsla( 284 69% 50% / 1 ),
-                hsla( 338 100% 50% / 1 ) 10%,
-                hsla( 348 100% 56% / 1 ),
-                hsla( 43 100% 50% / 1 )
-             ); */
-             /* background: linear-gradient(
-            hsl( 0 0% 0% / 0 ),
-            hsl( 0 0% 0% / 0.2 ) 10%,
-            hsl( 0 0% 0% / 1 )
-            ); */
             overflow: overlay;
             color: white;
             height: 100vh;
         }
         
-
-        /* GRID -------------- */
-        /* .container{
-            min-height: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: .35fr 1fr .5fr .5fr .5fr .45fr;
-            grid-template-areas: 
-                                "appbar     appbar           appbar appbar"
-                                "pao        carne            queijo adicionais"
-                                "pao        carne            molho  adicionais"
-                                "pao        ponto-da-carne   molho  adicionais"
-                                "pao        ponto-da-carne   molho  adicionais"
-                                "footer     footer           footer footer";
-            gap: 34px;
-        } */
         .container-body{
             /* background: green; */
             min-height: 100vh;
@@ -105,16 +75,14 @@
                                      "footer";
             }
             .bg{
-                /* overflow-y: auto; */
                 height: 100%;
             }
             .card{
                 height: max-content;
-                /* overflow-y: hidden; */
             }
         }       /* ----------- GRID */
 
-        .appbar{
+        appbar{
             background-color: var( --appbar );
             grid-area: appbar;
             display: grid;
@@ -157,68 +125,7 @@
                 /* overflow-y: scroll; */
             }
         }
-
-        .card{
-            background: var(--card);
-            display: grid;
-            place-items: center;
-            /* justify-content: center; */
-            /* margin-left: 12px; */
-            /* padding: 12px 0px 12px 0px; */
-            box-shadow: 0 0 1px 0px var(--appbar);
-            overflow-y: auto;
-            border-radius: 8px;
-            color: var(--card);
-            font-weight: 700;
-            font-size: 0rem;
-            line-height: 1.55;
-            transition-duration: 1s;
-        }
-        .card:hover{
-            /* border-radius: 12px; */
-            transition-duration: .2s;
-            transform: translate(3px, -3px);
-            box-shadow: -3px 3px 5px 1px var(--appbar);
-        }
-        
-        /* GRID items -------- */
-        .pao    { grid-area: pao; }
-        .carne  { grid-area: carne; }
-        .queijo { grid-area: queijo; }
-        .molho  { grid-area: molho; }
-        .adicionais{ grid-area: adicionais; }
-        .extras{ grid-area: extras; }
-        .bebidas { grid-area: bebidas; }
-        .ponto-da-carne{ grid-area: ponto-da-carne; }   /* GRID items ---------- */
-
-
-        footer{
-            background-color: var( --appbar );
-            grid-area: footer;
-            display: grid;
-            place-items: center;
-            grid-auto-flow: column;
-            padding: 12px 0 12px 0;
-            gap: 12px;
-        }
-
-        .appbar-btn{
-            width: 160px;
-            max-height: 60px;
-            padding: 8px;
-            background: #ff9e00;
-            display: grid;
-            place-items: center;
-            border-radius: 50px;
-            color: var(--sidebar);
-            font-size: 17px;
-            transition-duration: 1s;
-        }
-        .appbar-btn:hover{
-            background: var(--card-blue);
-            /* transform: translate(2px, -2px); */
-            transition: .2s;
-        }
+/*  */
         
         
     </style>
@@ -228,23 +135,11 @@
 <body class="container-body"> 
     
 
-
-
-
-
-
-
-
-
-
-    
-    
-
-    <div class="appbar">appbar
+    <appbar>appbar
         <div class="appbar-btn" onclick="openNavDrawer()">
            <p> &#9776; </p>
         </div>
-    </div>
+    </appbar>
 
 
 <!-- card-l-login -->
