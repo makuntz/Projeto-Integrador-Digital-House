@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" type="text/css" href="./assets/styles/login.css">
+
+	<title>Comis & Bebis</title>
+
+
+
+</head>
+
+
+<!-- ==========================================================
+		body
+ -->
+
+
+ <!-- background temporario -->
+<body background="./assets/img/bg.jpg">
+
+
+
+	<div class="main">  	
+		<input type="checkbox" id="checkbox" aria-hidden="true">
+
+
+
+<!-- acessar conta -->
+			<div class="login">
+				<form>
+					<label for="checkbox" aria-hidden="true">Acessar conta</label>
+					<input type="email" name="email" placeholder="Email ou telefone" required="">
+					<input type="password" name="pswd" placeholder="Senha" required="">
+
+
+
+ <div class="espaco">	
+	 
+	 <div class="ss0"></div>
+
+	 <div class="ss2">
+		 <input type="checkbox" name="" id="">
+	 </div>
+	 <div class="ss1">
+		 <p> Mantenha-me logado</p>
+	 </div>
+
+	<div class="ss0"></div>
+</div>
+	<div class="clearfix"></div>
+
+
+
+<div class="espaco">
+	<div class="ss0"></div>
+	<div class="ss3">
+		<p>Esqueçeu sua senha? recupere &nbsp;</p>
+	</div>
+	<div class="ss4">
+		<a href="">aqui</a>
+	</div>
+	<div class="ss0"></div>
+	<!-- <div class="clearfix"></div> -->
+</div>
+
+
+
+
+
+
+
+
+
+					<button>ENTRAR</button>
+				</form>
+			</div>	
+<!-- --------------------------------------------------------------------- logar -->
+
+
+
+
+
+
+
+
+<!-- criar conta -->
+			<div class="signin">
+				<form>
+					<label for="checkbox" aria-hidden="true">Criar conta</label>
+					<input type="text" name="txt" placeholder="Nome de usuário" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Senha" required="">
+					<!-- <input type="tel" name="" id="telefone" placeholder="Telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> -->
+					<input type="tel" name="" id="telefone" placeholder="Telefone" pattern="\(\d{2}\)\s*\d{5}-\d{4}" maxlength="15">
+
+					
+					<button>REGISTRAR</button>
+				</form>
+			</div>	
+<!-- ------------------------------------------------------------------------- registrar -->
+
+	</div>	<!-- ------------------------------------------- main -->
+
+
+	<script src="./assets/scripts/login.js"></script>
+</body>
+</html>
