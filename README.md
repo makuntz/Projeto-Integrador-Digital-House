@@ -1,4 +1,4 @@
-# Pagina de login e cadastro
+# Projeto Integrador Digital House
 
 ## Desenvolvedores:
 
