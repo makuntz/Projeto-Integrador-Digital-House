@@ -4,31 +4,37 @@
 
 - ### ${ [Maíra Kuntz](https://github.com/makuntz/) }
 ~~~~
+ // em andamento
  pagamento
 ~~~~
 
 - ### ${ [Ricardo C. Thomazelli](https://github.com/rcthomazelli/) }
 ~~~~
-home
+ // em andamento
+ home
 ~~~~
 
 - ### ${ [pedromtoledo](https://github.com/pedromtoledo/) }
 ~~~~
+ // em andamento
  tabela de itens
 ~~~~
 
 - ### ${ [Anselmo Sammarco Nunes](https://github.com/Ceo-Sammarco/) }
 ~~~~
+ // em andamento
  card login
 ~~~~
 
 - ### ${ [Alan Pinheiro](https://github.com/alanhspinheiro/) }
 ~~~~
+ // em andamento
  card cadastro
 ~~~~
 
 - ### ${ [TiMadureira](https://github.com/TiMadureira/) }
 ~~~~
+ // em andamento
  página de checkout
 ~~~~
 
