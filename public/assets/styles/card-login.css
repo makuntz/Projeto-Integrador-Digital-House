@@ -81,7 +81,7 @@
 	max-width: 550px;         
 	height: 0px;        
 	min-width: 450px;
-	min-height: 500px;
+	min-height: 0px;	/* needed to make it grow at start-up */
 	background: linear-gradient(to bottom, var( --accent ), var( --accent ), var( --primary ) );
 	overflow: hidden;
     transition: .3s;
@@ -299,7 +299,104 @@
 	transform: scale( .6 );
 }
 
+@media screen and ( max-width: 600px ) {
+	.sign-up{
+		height: 560px;
+		/* max-width: 33vw; */
+		min-width: 100vw;
+		background: var( --primary );
+		border-radius: 50% / 8%;
+		transform: translateY( 194px );	
+		transition: .5s ease-in-out;
+	}
+	.sign-up form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.sign-up input {
+		width: 60%;
+		height: 5ch;
+		background: var(--input);
+		justify-content: center;
+		display: flex;
+		margin: 16px auto;
+		padding: 10px;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+	}
+	.sign-up label{
+		color: var( --accent );
+		transform: scale( .6 );
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.sign-upFormLabel{
+		color: var( --title );
+		font-size: 2.3em;
+		text-shadow: 0px 0px 2px var( --gradient-shadow );
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 50px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: .1s ease-in-out;
+	}
+	.sign-upFormLabel:hover{
+		text-decoration-color: var( --primary );
+		text-shadow: 0px 0px 30px var( --accent );
+		color: var( --bgg );
+	}
+	
+	#chk:checked ~ .sign-up{
+		transform: translateY( -166px );
+	}
+	#chk:checked ~ .sign-up label{
+		transform: scale( 1 );	
+	}
+	#chk:checked ~ .sign-up{
+		background: var( --bgg );
+	}
+	#chk:checked ~ .sign-in .sign-inFormLabel{
+		transform: scale( .6 );
+	}
+	
 
+	.card-l-container{
+		/* background: rgba( 80, 80, 80, .50); */
+		background: #ffffff10;
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		display: grid;
+		place-items: center;
+		visibility: hidden;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		z-index: 3;
+		font-family: 'Poppins', sans-serif;
+	}
+	
+	.card-l{
+		/* max-width: 550px; */         
+		height: 100vh;        
+		min-width: 100vw;
+		min-height: 0px; /* needed to make it grow at start-up */
+		background: linear-gradient(to bottom, var( --accent ), var( --accent ), var( --primary ) );
+		overflow: hidden;
+		transition: .3s;
+		border-radius: 25px;
+		box-shadow: 5px 20px 50px var( --primary );
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+	}
+}
 
 .clear{
     clear: both;
