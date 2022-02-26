@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comis & Bebis</title>
-    <link rel="stylesheet" href="pagtrabalho.css">
+    <link rel="stylesheet" href="../public/stylesheets/css-pg-produtos.css">
+    <link rel="stylesheet" href="../public/stylesheets/css-header.css">
+    <link rel="stylesheet" href="../public/stylesheets/css-footer.css">
 </head>
 <body background= "img/Banner-Promocao-3-ComisBebis.jpg">
-    <header>
+    <%- include('./partials/header') %>
+    <!-- <header>
         <div>
             <img id="logotipoComisBebisHeader" src="img/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis">
         </div>
@@ -18,7 +21,7 @@
                 CARRINHO
             </p>
         </article>
-    </header>
+    </header> -->
     <main>
             <!-- COMEÇO DOS INGREDIENTES -->
     <section class="container-ingredientes">
@@ -363,7 +366,8 @@
         </button>
     </form>
 </section>
-    <footer>
+    <%- include('./partials/footer.ejs') %> 
+    <!-- <footer>
         <section class="base">
             <article class="logotipoComisBebisFooter">
                 <img src="img/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis">
@@ -410,6 +414,6 @@
         </div>
         </article>
         </section>
-    </footer>
+    </footer> -->
     </body>
 </html>

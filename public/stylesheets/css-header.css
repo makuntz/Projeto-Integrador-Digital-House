@@ -1,0 +1,93 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+header {
+    height: 10vw;
+    max-height: 170px;
+    display: flex;
+    width: 100%;
+}
+
+.topo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: 0rem 0.125rem 0.625rem rgb(0, 0, 0, 0.25);
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logoComisBebisHeader {
+    display: flex;
+    max-width: 156px;
+    height: 100%;
+    padding-top: 3px;
+    padding-left: 3vw;
+    align-items: center;
+}
+
+.logoComisBebisHeader img {
+    max-width: 8.2vw;
+}
+
+.menu {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.botaoMonteDoSeuJeito {
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: #ffa500;
+    border-radius: 50px;
+    line-height: 4.2vw;
+    font-weight: bold;
+    font-size: min(max(8px, 1.1vw), 18px);
+    width: 30%;
+    justify-content: center;
+ }
+
+.botaoCarrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgBotaoCarrinho {
+    display: flex;   
+    width: 6.2vw;
+}
+
+#textoBotaoCarrinho {
+    color: white;
+    margin-top: 0rem;
+    font-weight: bold;
+    font-size: min(max(4px, 1vw), 13.5px);
+}
+
+#loginRegistro {
+    display: flex;
+    padding-left: 5%;
+    color: black;
+    background-color: #ffa500;
+    width: 35%;
+    font-weight: bold;
+    font-size: min(max(8px, 1.5vw), 18px);
+    height: 100%;
+    align-items: center;    
+}
+
+/* INICIO FORMATOS RESPONSIVOS */
+

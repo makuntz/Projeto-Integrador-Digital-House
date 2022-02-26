@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../public/stylesheets/css-pg-carrinho.css">
+    <link rel="stylesheet" href="../public/stylesheets/css-header.css">
+    <link rel="stylesheet" href="../public/stylesheets/css-footer.css">
     <title>carrinho</title>
 </head>
 <body>
-    <header class="header"> 
+    <%- include('./partials/header') %>
+    <!-- <header class="header"> 
         <img class="logotipoheader" src="logotipo.jpeg" alt="logotipo">
         <img class="carrinho" src="carrinho.jpeg" alt="carrinho">
-    </header>
+    </header> -->
     <main>
         <section>
             <ul class="lista" style="list-style-type:none;">
@@ -29,11 +32,12 @@
             <p class="pagamento">ir para o pagamento</p>
         </section>
     </main>
-    <footer class="footer">
+    <%- include('./partials/footer.ejs') %> 
+    <!-- <footer class="footer">
         <img src="logotipo.jpeg" alt="logitipo">
         <img src= "mapa.jpeg" alt="localização">
         <img src= "pagamentos.jpg" alt=pagamentos> 
         <img src= "contato.jpg" alt=contato>      
-        </footer>
+    </footer> -->
 </body>
 </html>

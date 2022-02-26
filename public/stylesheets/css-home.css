@@ -17,7 +17,7 @@ body {
 
 /* INICIO HEADER */
 
-header {
+/* header {
     height: 10vw;
     max-height: 170px;
     display: flex;
@@ -98,7 +98,7 @@ header {
     font-size: min(max(8px, 1.5vw), 18px);
     height: 100%;
     align-items: center;    
-}
+} */
 
 /* FIM HEADER */
 
@@ -163,7 +163,7 @@ main {
 
 /* INICIO FOOTER */
 
-footer {
+/* footer {
     margin-top: auto;
     width: 100%;
 }
@@ -293,7 +293,7 @@ footer {
 img.logosRedesSociais {
     width: 100%;
     max-width: 54px;
-}
+} */
 
 /* FIM FOOTER */
 
@@ -315,11 +315,13 @@ img.logosRedesSociais {
     #promocao1, #promocao2, #promocao3 {
         min-width: 80vw;
     }
-
+/* FOOTER
     .base {
         max-height: auto;
-    }
+    } */
 }
+
+/* FOOTER
 
 @media only screen and (max-width: 700px) {
 
@@ -344,8 +346,9 @@ img.logosRedesSociais {
     .base {
         max-height: none;
     }
-}
+} */
 
+/* FOOTER
 @media only screen and (max-width: 560px) {
 
     .base {
@@ -393,4 +396,4 @@ img.logosRedesSociais {
         min-width: 10vw;
     }
 
-}
+} */
