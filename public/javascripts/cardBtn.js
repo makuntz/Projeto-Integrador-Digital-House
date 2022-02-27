@@ -1,31 +1,5 @@
 
 
-Para instalar o card na Home é só usar o include dentro do body da página Home
-"de preferência abaixo do header"
-
-            V
-            V
-            V
-            V
-  
-  <%- include("card"); %> 
-
-  _____________________________________________________
-
-  insere o script:           onclick="openNavDrawer()"
-  dentro da tag do botão
-
-  _____________________________________________________
-
-  cria na sua pagina, um link pro script do botão de chamada pro card
-  deve ser a última parte dentro do body
-
-  <script src="javascripts/cardBtn.js"></script>
-
-  cria o arquivo js dentro de "public/javascript"
-  com o seguinte código:
-
-
 var listener = false; 
     
 function openNavDrawer() {
@@ -60,4 +34,3 @@ function closeNavDrawer() {
 	}
 
 } 
-

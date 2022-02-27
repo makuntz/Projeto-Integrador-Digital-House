@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comis & Bebis</title>
-    <link rel="stylesheet" href="cssHome.css">
+    <!-- <link rel="stylesheet" href="cssHome.css"> -->
+    <link rel="stylesheet" href="stylesheets/css-home.css">
 </head>
 <body>
     <header>
@@ -24,12 +25,13 @@
                     </p>
                 </div>            
                 <div id="loginRegistro">
-                    <p>Login/Registro</p>
+                    <p onclick="openNavDrawer()">Login/Registro</p>
                 </div>
             </nav>
         </section>
     </header>
 
+    <%- include("card-login-e-registro"); %> 
 
     <main>
         <section class="banner">
@@ -102,5 +104,7 @@
             </article>
         </section>
     </footer>
+
+    <script src="javascripts/cardBtn.js"></script>
 </body>
 </html>
