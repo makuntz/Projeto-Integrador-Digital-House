@@ -176,7 +176,11 @@
     padding: 10px;
     border: none;
     outline: none;
-    border-radius: .3rem;
+    border-radius: .2rem;
+	box-shadow: inset 0 -2px 10px 0px #00000060;
+}
+.sign-in input:hover {
+	box-shadow: inset 0 -2px 10px 0px #00000045;
 }
 .sign-inFormLabel{
 	color: var( --title );
@@ -258,7 +262,11 @@
     padding: 10px;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: .2rem;
+	box-shadow: inset 0 -2px 10px 0px #00000005;
+}
+.sign-up input:hover {
+	box-shadow: inset 0 -2px 10px 0px #00000000;
 }
 .sign-up label{
 	color: var( --accent );
@@ -368,7 +376,7 @@
 					padding: 10px;
 					border: none;
 					outline: none;
-					border-radius: .3rem;
+					border-radius: .2rem;
 				}
 				.sign-inFormLabel{
 					color: var( --title );
@@ -450,7 +458,7 @@
 					padding: 10px;
 					border: none;
 					outline: none;
-					border-radius: .3rem;
+					border-radius: .2rem;
 				}
 				.sign-up label{
 					color: var( --accent );
