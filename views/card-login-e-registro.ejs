@@ -1,154 +1,17 @@
 <!DOCTYPE html >
-<html id="output">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../public/stylesheets/css-card-login-e-registro.css">
+    <link rel="stylesheet" href="stylesheets/css-card-login-e-registro.css">
 
     <title></title>
     
-    <style type="text/css" media="all">
-        *, ::before, ::after{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-         
-        :root{
-            --accent: #ff9e00;
-            --appbar: #1b1d21;
-            --scaffold: #202236;
-            --sidebar: #000;
-            --sidebar-r: #222;
-            --card: rgba( 255, 255, 255, 0.5 );
-            --card-hvr: #ccc;
-            --card-blue: #55f;
-            --grid-display: grid;
-            --grid-place-items: center;
-            
-        }
-
-        
-        
-        body{
-            /* background-color: var( --accent ); */
-            /* background: linear-gradient(
-                hsla( 43 100% 50% / 1 ),
-                hsla( 43 100% 50% / 1 ) 20%,
-                hsla( 0 0% 10% / 1) ,
-                hsla( 0 0% 0% / 1)
-            ); */
-            background: linear-gradient(
-                27deg,
-                #ff5000,
-                #1122ff,
-                #ff1122
-            );
-            background-repeat: no-repeat;
-            background-size: 100%;
-            overflow: overlay;
-            color: white;
-            height: 100vh;
-        }
-        
-        .container-body{
-            /* background: green; */
-            min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr 11fr 1fr;
-            grid-template-rows: 3fr 16fr 4fr;
-            grid-template-areas: 
-                                "appbar appbar appbar"
-                                "bg bg bg"
-                                "footer footer footer";
-            gap: 18px;
-        }
-        @media only screen and ( max-width: 550px ) {
-            .container-body{
-                /* overflow-y: auto; */
-                grid-template-columns: 1fr;
-                grid-template-rows: .55fr 5fr .8fr;
-                grid-template-areas: "appbar"
-                                     "bg"
-                                     "footer";
-            }
-            .bg{
-                height: 100%;
-            }
-            .card{
-                height: max-content;
-            }
-        }       /* ----------- GRID */
-
-        appbar{
-            background-color: var( --appbar );
-            grid-area: appbar;
-            display: grid;
-            place-items: center;
-            grid-auto-flow: column;
-            gap: 12px;
-            color: var(--card);
-            padding: 12px 0 12px 0;
-        }
-        appbar span {
-            width: 15%;
-            transition: .3s ease-out;
-            padding: 1ch;
-            text-align: center; color: #ff9e00; line-height: .4; font-size: 2.2rem; font-weight: 800;
-        }
-        appbar span:hover {
-            color: #ccc; text-shadow: 0 0 5px#1122ff; transition: .5s ease-in;
-        }
-
-        .container-bg{ 
-            padding: 12px 12px 12px 12px;
-            grid-area: bg;
-            min-height: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr .5fr .5fr .5fr;
-            grid-template-areas: 
-                                "pao   carne            queijo adicionais extras bebidas"
-                                "pao   carne            molho  adicionais extras bebidas"
-                                "pao   ponto-da-carne   molho  adicionais extras bebidas"
-                                "pao   ponto-da-carne   molho  adicionais extras bebidas";
-            gap: 18px;
-        }
-        @media only screen and ( max-width: 550px ) {
-            .container-bg{
-                /* overflow-y: auto; */
-                grid-template-columns: 1fr;
-                grid-template-rows: 20fr 20fr 20fr 20fr 20fr 20fr 20fr 20fr;
-                grid-template-areas: "pao"
-                                     "carne"
-                                     "ponto-da-carne"
-                                     "queijo"
-                                     "molho"
-                                     "adicionais"
-                                     "extras"
-                                     "bebidas";
-            }
-            .card{
-                /* overflow-y: scroll; */
-            }
-        }
-        
-    </style>
-    
 </head>
 
-<body class="container-body"> 
-    
-
-    <appbar>
-        <span onclick="openNavDrawer()">
-            &#9776;
-        </span>
-    </appbar>
-
-
+<body>
 <!-- card-l-login -->
 
 <div class="card-l-container" id="card-l-container">
@@ -167,7 +30,7 @@
                                 <label for="manterLogado" class="text keep">
                                     <div class="clear"></div>
                                     <input type="checkbox" id="manterLogado" name="Mantenha-me logado">
-                                    <p>Mantenha-me logado</p>
+                                    <span>Mantenha-me logado</span>
                                 </label> </nobr>
                     </div>
                     <div class="formTextBox">
@@ -175,19 +38,19 @@
                                     Esqueçeu sua senha? <a href="" id="forgotPass">recupere aqui</a>
                                 </label>
                     </div>
-                    <button class="sbutton" >ENTRAR</button>
+                    <button class="sign-in-button" >ENTRAR</button>
                 </form>
             </div>		<!-- sign-in -->
 
 
-            <div class="sign-up">
+            <div class="sign-up" id="sign-up">
                 <form>
-                    <label for="chk" class="sign-upFormLabel" aria-hidden="true">Criar conta</label>
+                    <label for="chk" class="sign-upFormLabel" aria-hidden="true" ><span id="sign-upText0" onclick="signUpText0()">Cadastre-se aqui!</span><span id="sign-upText1" onclick="signUpText1()">Boas vindas!</span> </label>
                     <input type="text" name="txt" placeholder="Nome de usuário" required="">
                     <input type="email" name="email" placeholder="Email" required="">
                     <input type="password" name="pswd" placeholder="Senha" required="">
                     <input type="tel" name="" id="telefone" placeholder="Telefone" pattern="\(\d{2}\)\s*\d{5}-\d{4}"   maxlength="15" required>
-                    <button class="sbutton" >REGISTRAR</button>
+                    <button class="sign-up-button" >REGISTRAR</button>
                 </form>
             </div>		<!-- sigin-up -->
 
@@ -202,21 +65,7 @@
     
     
     
-    <script src="../public/javascripts/-js-card-login-e-registro.js"></script>
-    <script>
-
-
-        $('#output').html(html);
-        document.getElementById('output').innerHTML = html;
-
-        $( "#output" ).html( html );
-        document.getElementById( "output" ).innerHTML = html;
-        card-login/cadastro
-
-        $( "#output" ).html( html );
-        document.getElementById( "output" ).innerHTML = html;
-		 card-login/cadastro
-    </script>
+    <script src="javascripts/card.js"></script>
 
 </body>
 
