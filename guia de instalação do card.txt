@@ -8,7 +8,7 @@ Para instalar o card na Home é só usar o include dentro do body da página Hom
             V
             V
   
-  <%- include("card"); %> 
+  <%- include("card-login-e-registro"); %> 
 
   _____________________________________________________
 
