@@ -14,4 +14,5 @@ router.get('/carrinho', indexController.carrinho);
 router.get('/pagamento', indexController.pagamento);
 
 
+
 module.exports = router;
