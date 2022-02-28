@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comis e Bebis</title>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="stylesheets/css-pg-pagamento.css">
+    <link rel="stylesheet" href="stylesheets/css-header.css">
+    <link rel="stylesheet" href="stylesheets/css-footer.css">
 </head>
 <body>
-    <header class="logo">
+    <%- include('./partials/header') %>
+    <!-- <header class="logo">
         <div class="logo1">
             <a href=""><img src="image/Logotipo-ComisBebis.png" alt=""></a> 
         </div>
         <div class="logo2" >
             <a href=""><img src="image/carrinho.png" alt="" id="carrinho"></a>   
         </div>
-    </header>
+    </header> -->
 
     <main>
         <section class="base">
             <div class="cinza">
-                <img src="image/localizacao.png" alt="" id="balao">
+                <img src="images/localizacao.png" alt="" id="balao">
                 <p>Confirme seu endereço:</p>
             </div>
             <div class="branco" id="endereco">
@@ -35,7 +37,7 @@
                 </div>            
             </div>
             <div class="cinza">
-                <img src="image/dinheiro.png" alt="" id="dinheiro">
+                <img src="images/pg-pagamento/dinheiro.png" alt="" id="dinheiro">
                 <p>Pague na entrega:</p>
             </div>
             <div class="branco" id="pagamento">
@@ -45,14 +47,14 @@
                 <label for="horns">Máquina de cartão</label>
             </div> 
             <div class="cinza">
-                <img src="image/cartao.png" alt="" id="cartao">
+                <img src="images/pg-pagamento/cartao.png" alt="" id="cartao">
                 <p>Pague pelo site:</p>
             </div>
             <div class="branco" id="botaoCadastroCartao">
-                <p><button id="cadastroCartao"><img src="image/cartao.png" alt="cartao" id="cartaoButton">Cadastrar Novo Cartão + </button></p>
+                <p><button id="cadastroCartao"><img src="images/pg-pagamento/cartao.png" alt="cartao" id="cartaoButton">Cadastrar Novo Cartão + </button></p>
             </div>
             <div class="cinza">
-                <img src="image/pedido.png" alt="" id="pedido">
+                <img src="images/pg-pagamento/pedido.png" alt="" id="pedido">
                <p>Pedido:</p> 
             </div>
             <div class="branco" id="entrega">
@@ -80,6 +82,8 @@
         </section>
     </main>
 
+    <%- include('./partials/footer.ejs') %> 
+<!-- 
     <footer>
         <div class="logoFooter1">
             <img src="image/Logotipo-ComisBebis.png" alt="" id="logoFooter">
@@ -112,10 +116,8 @@
                 <img src="image/whatsapp.png" alt="">
                 <img src="image/email.png" alt="">
             </div>
-        </div>
-        
-    </footer>
-    
+        </div>        
+    </footer> -->    
 
 </body>
 </html>

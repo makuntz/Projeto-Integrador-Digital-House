@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comis e Bebis</title>
-    <link rel="stylesheet" href="cadastroCartao.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="stylesheets/css-pg-cadastro-cartao.css">
+    <link rel="stylesheet" href="stylesheets/css-header.css">
+    <link rel="stylesheet" href="stylesheets/css-footer.css">
 </head>
 <body>
-    <header class="logo">
+    <%- include('./partials/header') %>
+    <!-- <header class="logo">
         <div class="logo1">
             <a href=""><img src="image/Logotipo-ComisBebis.png" alt=""></a> 
         </div>
         <div class="logo2" >
             <a href=""><img src="image/carrinho.png" alt="" id="carrinho"></a>   
         </div>
-    </header>
+    </header> -->
     <section>
         <div class="wrapper">
             <div class="container">
@@ -55,7 +57,8 @@
             </div>
         </div>
     </section>
-    <footer>
+    <%- include('./partials/footer.ejs') %>
+    <!-- <footer>
         <div class="logoFooter1">
             <img src="image/Logotipo-ComisBebis.png" alt="" id="logoFooter">
         </div>
@@ -87,8 +90,7 @@
                 <img src="image/whatsapp.png" alt="">
                 <img src="image/email.png" alt="">
             </div>
-        </div>
-        
-    </footer>
+        </div>        
+    </footer> -->
 </body>
 </html>
