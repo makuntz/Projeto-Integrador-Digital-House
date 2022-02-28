@@ -13,6 +13,10 @@ router.get('/carrinho', indexController.carrinho);
 
 router.get('/pagamento', indexController.pagamento);
 
+router.get('/login', indexController.login);
+
+router.get('/cartao', indexController.cadastroCartao);
+
 
 
 module.exports = router;

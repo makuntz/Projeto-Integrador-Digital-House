@@ -1,8 +1,5 @@
 
 
-const home = require ('../package.json')
-
-
 const indexController = {
     home: (req, res) => {
         res.render('pg-home')
@@ -18,6 +15,14 @@ const indexController = {
 
     pagamento: (req, res) => {
         res.render('pg-pagamento')
+    },
+
+    login: (req, res) => {
+        res.render('card-login-e-registro')
+    },
+
+    cadastroCartao: (req, res) => {
+        res.render('pg-cadastro-cartao')
     }
 
 }
