@@ -5,102 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comis & Bebis</title>
-    <link rel="stylesheet" href="cssHome.css">
+    <link rel="stylesheet" href="stylesheets/css-home.css">
+    <link rel="stylesheet" href="stylesheets/css-header.css">
+    <link rel="stylesheet" href="stylesheets/css-footer.css">
 </head>
+<!-- ADD CARD LOGIN & REGISTRO -->
+<%- include("card-login-e-registro"); %> 
+
 <body>
-    <header>
-        <section class="topo">
-            <div class="logoComisBebisHeader">
-                <img id="logotipoComisBebisHeader" src="img/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis">
-            </div>
-            <nav class="menu">
-                <div class="botaoMonteDoSeuJeito">
-                    <p>MONTE DO SEU JEITO!</p>
-                </div>
-                <div class="botaoCarrinho">
-                    <img id="imgBotaoCarrinho" src="img/Botao-CarrinhoCompras-ComisBebis.png" alt="Botão Carrinho de Compras Comis&Bebis">
-                    <p id="textoBotaoCarrinho">
-                        CARRINHO
-                    </p>
-                </div>            
-                <div id="loginRegistro">
-                    <p>Login/Registro</p>
-                </div>
-            </nav>
-        </section>
-    </header>
-
-
+    <%- include('./partials/header') %>
     <main>
         <section class="banner">
             <div id="bannerPrincipal">
-                <img src="img/Banner-Principal-ComisBebis.jpg" alt="Banner Principal - Imagem Lanche aberto em cima do logotipo Comis&Bebis">
+                <img src="images/pg-home/Banner-Principal-ComisBebis.jpg" alt="Banner Principal - Imagem Lanche aberto em cima do logotipo Comis&Bebis">
             </div>
         </section>
         <section class="promocoes">
             <div id="promocao1">
-                <img class="imgpromocao" src="img/Banner-Promocao-1-ComisBebis.jpg" hspace="10" alt="Foto lanche pão rosa">
+                <img class="imgpromocao" src="images/pg-home/Banner-Promocao-1-ComisBebis.jpg" hspace="10" alt="Foto lanche pão rosa">
             </div>
             <div id="promocao2">
-                <img class="imgpromocao" src="img/Banner-Promocao-2-ComisBebis.jpg" hspace="10" alt="Foto dois lanches com caneca de shop">
+                <img class="imgpromocao" src="images/pg-home/Banner-Promocao-2-ComisBebis.jpg" hspace="10" alt="Foto dois lanches com caneca de shop">
             </div>
             <div id="promocao3">
-                <img class="imgpromocao" src="img/Banner-Promocao-3-ComisBebis.jpg" hspace="10" alt="Foto lanche com batata frita e copo de refrigerante com gelo">
+                <img class="imgpromocao" src="images/pg-home/Banner-Promocao-3-ComisBebis.jpg" hspace="10" alt="Foto lanche com batata frita e copo de refrigerante com gelo">
             </div>            
         </section>
     </main>
+    <%- include('./partials/footer.ejs') %>
 
+    <script src="javascripts/js-card-login-e-registro.js"></script>
 
-    <footer>
-        <section class="base">
-            <article class="logotipoComisBebisFooter">
-                <img src="img/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis">
-            </article>
-            <article class="contatoEmapa">
-                <div class="contato">
-                    <p>Telefone: (00) 00000-0000 Endereço: Rua teste teste teste, n00 - Jd Teste Teste/TT</p>
-                </div>
-                <div class="mapa">
-                    <img src="img/Mapa.jpg" alt="Mapa">
-                </div>
-            </article>
-            <article class="tiposPagamento">
-                <div class="textoTiposPagamento">
-                    <p>Tipos de Pagamento</p>
-                </div>
-                <div class="logosPagamento">
-                    <div class="formaPgto1">
-                        <img src="img/Logo-MasterCard.jpg" hspace="5" alt="Logo Mastercard">
-                    </div>
-                    <div class="formaPgto2">
-                        <img src="img/Logo-Visa.jpg" hspace="5" alt="Logo Visa">
-                    </div>
-                    <div class="formaPgto3">
-                        <img src="img/Logo-Elo.jpg" hspace="5" alt="Logo Elo">
-                    </div>
-                </div>           
-            </article>
-
-            <article class="compartilhe">
-                <div class="textoCompartilhe">
-                    <p>Compartilhe</p>
-                </div>
-                <div class="logosCompartilhe">
-                    <div class="logoCompartilhe">
-                        <img class="logosRedesSociais" src="img/Icone-Facebook.png" hspace="3" alt="Ícone Facebook">
-                    </div>
-                    <div class="logoCompartilhe">
-                        <img class="logosRedesSociais" src="img/Icone-Instagram.png" hspace="3" alt="Ícone Instagram">
-                    </div>
-                    <div class="logoCompartilhe">
-                        <img class="logosRedesSociais" src="img/Icone-Whatsapp.png" hspace="3" alt="Ícone Whatsapp">
-                    </div>
-                    <div class="logoCompartilhe">
-                        <img class="logosRedesSociais" src="img/Icone-Email.png" hspace="3" alt="Ícone E-mail">
-                    </div>
-                </div> 
-            </article>
-        </section>
-    </footer>
 </body>
 </html>

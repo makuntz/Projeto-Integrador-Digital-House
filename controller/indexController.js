@@ -1,5 +1,8 @@
 
 
+const home = require ('../package.json')
+
+
 const indexController = {
     home: (req, res) => {
         res.render('pg-home')
