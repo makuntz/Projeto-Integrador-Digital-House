@@ -11,13 +11,74 @@
 </head>
 <body>
 
-    <!-- ADD CARD LOGIN & REGISTRO -->
-    <%- include("card-login-e-registro"); %> 
-
     <%- include('./partials/header') %>
         
-    <script src="javascripts/js-card-login-e-registro.js"></script>
+    <main>
+        <section class="base">
+            <div class="cinza">
+                <img src="images/localizacao.png" alt="" id="balao">
+                <p>Confirme seu endereço:</p>
+            </div>
+            <div class="branco" id="endereco">
+                <div>
+                    <label for="CEP" id="cep" >CEP:</label>
+                    <input type="text" id="cep2" maxlength="8">
+                    <button id="ok">Ok</button>
+                </div>
+                <div id="rua">
+                    <p>Rua: Teste, 000</p>
+                </div>            
+            </div>
+            <div class="cinza">
+                <img src="images/pg-pagamento/dinheiro.png" alt="" id="dinheiro">
+                <p>Pague na entrega:</p>
+            </div>
+            <div class="branco" id="pagamento">
+                <input type="radio" id="Dinheiro" name="pagamento">
+                <label for="horns">Dinheiro</label>
+                <input type="radio" id="maquinadecartao" name="pagamento">
+                <label for="horns">Máquina de cartão</label>
+            </div> 
+            <div class="cinza">
+                <img src="images/pg-pagamento/cartao.png" alt="" id="cartao">
+                <p>Pague pelo site:</p>
+            </div>
+            <div class="branco" id="botaoCadastroCartao">
+                <p><button id="cadastroCartao"><img src="images/pg-pagamento/cartao.png" alt="cartao" id="cartaoButton">Cadastrar Novo Cartão + </button></p>
+            </div>
+            <div class="cinza">
+                <img src="images/pg-pagamento/pedido.png" alt="" id="pedido">
+               <p>Pedido:</p> 
+            </div>
+            <div class="branco" id="entrega">
+                <p>Entrega</p>
+                <span>R$ 3,99</span>
+            </div>
+            <div class="branco" id="subtotal">
+                <p>Subtotal</p>
+                <span>R$ 74,00</span>
+            </div>
+            <hr>
+            <div class="branco" id="total">
+                <p>TOTAL</p>
+                <span>R$ 77,99</span>
+            </div>
+        </section>
+
+        <section class="botao">
+            <div>
+                <input type="button" value="Voltar para o Carrinho">
+            </div>
+            <div>
+                <input type="button" value="Enviar Pedido">
+            </div>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+    
 </body>
 </html>
  
-<!-- comentando -->
+ <!-- ADD CARD LOGIN & REGISTRO -->
+ <%- include("card-login-e-registro"); %> 

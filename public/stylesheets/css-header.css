@@ -92,49 +92,57 @@ header {
 #btn_navMenuHamburguer {
     display: none;
 }
-.menuMobile {
+.navMenuMobile {
     display: none;
 }
+
 /* INICIO FORMATOS RESPONSIVOS */
 
-/* Versão mobile deixar apenas menu nav com formato "hamburguer" */
-
 @media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    
     #btn_navMenuHamburguer {
         display: block;
         width: 30px;
         background-color: #ffa500;
         border-style: none;
         margin-right: 5vw;
-    }
-    .menu {
-        display: none;
-    }
-    .menuMobile {
+    }    
+    
+    .navMenuMobile {
         list-style: none;
         background-color: #ffa500;
-        width: 50vw;
+        width: 100vw;
         z-index: 3;
         position: absolute;
         top: 10vw;
-        left: 50%;
-        height: 40vw;
-        display: none;
+        left: 0%;
+        height: 40vw;        
         flex-direction: column;
-        text-align: center;        
+        text-align: center;  
+        cursor: pointer;      
     }
-    .menuMobile a {
+
+    #ulMenuMobile {
+        display: flex;
+        flex-direction: column;
+        padding: 4vw;  
+    }
+
+    #ulMenuMobile li {
+        display: flex;
+        flex-direction: column;
+        padding: 3vw;        
+    }
+     
+    .navMenuMobile a {
         text-decoration: none;
         color: black;
     }
-    .menuMobile a:houver {
+    .navMenuMobile a:hover {
         background-color: #00000080 ;
     }
-    .menuMobile li {
-        padding: 8% 0;
-        cursor: pointer;
-    }
-    .menuMobile li:houver {
-        background-color: #00000080 ;
-    }        
-}
+    
+}    
