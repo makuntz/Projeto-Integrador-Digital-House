@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comis & Bebis</title>
+    <link rel="stylesheet" href="stylesheets/css-pg-produtos.css">
+    <link rel="stylesheet" href="stylesheets/css-header.css">
+    <link rel="stylesheet" href="stylesheets/css-footer.css">
+</head>
+<body background= "images/pg-home/Banner-Promocao-3-ComisBebis.jpg">
+    <%- include('./partials/header') %>
+    <!-- <header>
+        <div>
+            <img id="logotipoComisBebisHeader" src="img/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis">
+        </div>
+        <article id="botaoCarrinho">
+            <img id="imgBotaoCarrinho" src="img/Botao-CarrinhoCompras-ComisBebis.png" alt="Botão Carrinho de Compras Comis&Bebis">
+            <p id="textoBotaoCarrinho">
+                CARRINHO
+            </p>
+        </article>
+    </header> -->
+    <main>
+            <!-- COMEÇO DOS INGREDIENTES -->
+    <section class="container-ingredientes">
+        <form action="teste.php">
+        
+            <div id = "pao">
+           <div class ="pao-titulo"> <strong>PÃO</strong> </div>
+            <br>
+            <br>
+        <div>
+
+        <div class="pao-box">
+                <input type="radio" id="PÃO TRADICIONAL" name="pao" value="pao tradicional" checked>
+            <label for="pao">PÃO TRADICIONAL</label>
+        </div>
+            <br>
+            <br>
+        <div class="pao-box">
+            <input type="radio" id="PÃO AMERICANO" name="pao" value="pao americano">
+            <label for="pao">PÃO AMERICANO</label>
+        </div>
+            <br>
+            <br>
+        <div class="pao-box">
+            <input type="radio" id="PÃO ITALIANO" name="pao" value="pao italiano">
+            <label for="pao">PÃO ITALIANO</label>
+        </div>
+            <br>
+            <br>
+        <div class="pao-box">
+            <input type="radio" id="PÃO BRIOCHE" name="pao" value="pao brioche">
+            <label for="pao">PÃO BRIOCHE</label>
+        </div>
+            <br>
+            <br>
+        <div class="pao-box">
+            <input type="radio" id="PÃO AUSTRALIANO" name="pao" value="pao australiano">
+            <label for="pao">PÃO AUSTRALIANO</label>
+        </div>
+            <br>
+            <br>
+        <div class="pao-box">    
+            <input type="radio" id="PÃO DE AZEITE" name="pao" value="pao azeite">
+            <label for="pao">PÃO DE AZEITE</label>
+        </div>
+            <br>
+            <br>
+        <div class="pao-box">
+            <input type="radio" id="PÃO DE CEBOLA" name="pao" value="pao cebola">
+            <label for="pao">PÃO DE CEBOLA</label>
+        </div>
+            <br>
+            <br>
+        <div class="pao-box">    
+            <input type="radio" id="PÃO DE CIABATTA" name="pao" value="pao ciabatta">
+            <label for="pao">PÃO DE CIABATTA</label>
+        </div>
+           
+    </main>            
+    
+</div>
+        
+        <div id = "carne">
+            <div class="carne-titulo"> 
+               <strong>CARNE</strong>
+            </div>
+                <br>
+                <br>
+            <div>
+            <div class="carne-box">
+                <input type="radio" id="BURGUER ANGUS 150G" name="carne" value="angus" checked>
+                <label for="carne">BURGUER ANGUS 150G</label>
+            </div>
+                <br>
+                <br>
+            <div class="carne-box">
+                <input type="radio" id="BURGUER FRANGO 160G" name="carne" value="frango">
+                <label for="carne">BURGUER FRANGO 160G</label>
+            </div>    
+                <br>
+                <br>
+            <div class="carne-box">   
+                <input type="radio" id="BURGUER VEGETARIANO 90G" name="carne" value="vegetariano">
+                <label for="carne">BURGUER VEGETARIANO 90G</label>
+            </div>
+                <br>
+                <br>
+            <div class="carne-box">
+                <input type="radio" id="BURGUER FRALDINHA 180G" name="carne" value="fraldinha">
+                <label for="carne">BURGUER FRALDINHA 180G</label>
+            </div>
+                <br>
+                <br>
+            <div class="carne-box">   
+                <input type="radio" id="BURGUER PERNIL 160G" name="carne" value="pernil">
+                <label for="carne">BURGUER PERNIL 160G</label>       
+            </div>
+        </div>
+     </div> 
+                
+        <div id = "pontodacarne">
+        <div class="ponto-titulo"> 
+             <strong>PONTO DA CARNE</strong> 
+        </div> 
+            <br>
+            <br>
+            <div class="ponto-box">
+                <input type="radio" id="AO PONTO" name="ponto" value="ao ponto" checked>
+                <label for="ponto">AO PONTO</label>
+            </div>
+                <br>
+            <div class="ponto-box">    
+                <input type="radio" id="BEM PASSADA" name="ponto" value="bem passada">
+                <label for="ponto">BEM PASSADA</label>
+            </div>
+                <br>
+            <div class="ponto-box">
+                <input type="radio" id="MAL PASSADA" name="ponto" value="mal passada">
+                <label for="ponto">MAL PASSADA</label>
+            </div>
+            
+        </div>
+
+        <div id = "queijo">
+           <div class="queijo-titulo">
+               <strong>QUEIJO</strong> 
+            </div>
+            <br>
+            <br>
+        <div>
+            <div class="queijo-box">
+                <input type="radio" id="CHEDDAR" name="queijo" value="cheddar" checked>
+                <label for="queijo">CHEDDAR</label>
+            </div>
+                <br>
+            <div class="queijo-box">    
+                <input type="radio" id="GORGONZOLA" name="queijo" value="gorgonzola">
+                <label for="queijo">GORGONZOLA</label>
+            </div>    
+                <br>
+            <div class="queijo-box">    
+                <input type="radio" id="PRATO" name="queijo" value="prato">
+                <label for="queijo">PRATO</label>
+            </div>
+                <br>
+            <div class="queijo-box">    
+                <input type="radio" id="PROVOLONE" name="queijo" value="provolone">
+                <label for="queijo">PROVOLONE</label>
+            </div>
+                <br>
+            <div class="queijo-box">    
+                <input type="radio" id="SEM QUEIJO" name="queijo" value="sem queijo">
+                <label for="queijo">SEM QUEIJO</label>
+            </div>
+            </div>
+        </div>
+
+        <div id = "molho">
+            <div class="molho-titulo">
+              <strong>MOLHO</strong>
+            </div>
+                <br>
+                <br>
+        <div>
+            <div class="molho-box"></div>
+                <input type="radio" id="MAIONESE DE ALHO" name="molho" value="maionese alho" checked>
+                <label for="molho">MAIONESE DE ALHO</label>
+            </div>   
+                <br>
+            <div class="molho-box">    
+                <input type="radio" id="MAIONESE DE BACON" name="molho" value="maionese bacon">
+                <label for="molho">MAIONESE DE BACON</label>
+            </div>    
+                <br>
+            <div class="molho-box">
+                <input type="radio" id="MAIONESE DE AZEITONA" name="molho" value="maionese azeitona">
+                <label for="molho">MAIONESE DE AZEITONA</label>
+            </div>
+                <br>
+            <div class="molho-box">    
+                <input type="radio" id="BARBECUE" name="molho" value="barbecue">
+                <label for="molho">BARBECUE</label>
+            </div>
+            </div>
+                
+        </div>
+
+        <div id = "adicionais">
+           <div class="adicionais-titulo"> 
+               <strong>ADICIONAIS</strong> 
+            </div>
+            <br>
+            <br>
+        <div>
+            <div class="adicionais-box">
+                <input type="radio" id="ALFACE AMERICANA" name="adicionais" value="alface americana" checked>
+                <label for="adicionais">ALFACE AMERICANA</label>
+            </div>
+                <br>
+                <br>
+            <div class="adicionais-box">    
+                <input type="radio" id="BACON" name="adicionais" value="bacon">
+                <label for="adicionais">BACON</label>
+            </div>
+                <br>
+                <br>
+            <div class="adicionais-box">    
+                <input type="radio" id="CEBOLA ROXA" name="adicionais" value="cebola roxa">
+                <label for="adicionais">CEBOLA ROXA</label>
+            </div>
+                <br>
+                <br>
+            <div class="adicionais-box">  
+                <input type="radio" id="MOLHO HOT" name="adicionais" value="molho hot">
+                <label for="adicionais">MOLHO HOT</label>
+            </div>    
+                <br>
+                <br>
+            <div class="adicionais-box">    
+                <input type="radio" id="OVO" name="adicionais" value="ovo">
+                <label for="adicionais">OVO</label>
+            </div>    
+                <br>
+                <br>
+            <div class="adicionais-box">    
+                <input type="radio" id="PICLES" name="adicionais" value="picles">
+                <label for="adicionais">PICLES</label>
+            </div>
+                <br>
+                <br>
+            <div class="adicionais-box">   
+                <input type="radio" id="RUCULA" name="adicionais" value="rucula">
+                <label for="adicionais">RUCULA</label>
+            </div>
+                <br>
+                <br>
+            <div class="adicionais-box">   
+                <input type="radio" id="TOMATE" name="adicionais" value="tomate">
+                <label for="adicionais">TOMATE</label>
+            </div>
+            </div>
+                
+        </div>
+        <div id = "acompanhamento">
+            <div class="acompanhamento-titulo"> 
+                <strong>ACOMPANHAMENTO</strong> 
+            </div>
+            <br>
+            <br>
+            <div class="acompanhamento-box">
+                <input type="radio" id="BATATA COM CHEDDAR E BACON" name="acompanhamento" value="batata cheddar e bacon" checked>
+                <label for="acompanhamento">BATATA COM CHEDDAR E BACON</label>
+            </div> 
+                <br>
+                <br>
+            <div class="acompanhamento-box">    
+                <input type="radio" id="BATATA RUSTICA SIMPLES" name="acompanhamento" value="batata rustica simples">
+                <label for="acompanhamento">BATATA RUSTICA SIMPLES</label>
+            </div>
+                <br>
+                <br>
+            <div class="acompanhamento-box">    
+                <input type="radio" id="DADINHO DE TAPIOCA" name="acompanhamento" value="dadinho tapioca">
+                <label for="acompanhamento">DADINHO DE TAPIOCA</label>
+            </div>
+                <br>
+                <br>
+            <div class="acompanhamento-box">   
+                <input type="radio" id="FRITAS PALITO SIMPLES" name="acompanhamento" value="fritas palito simples">
+                <label for="acompanhamento">FRITAS PALITO SIMPLES</label>
+            </div>    
+                <br>
+                <br>
+            <div class="acompanhamento-box">    
+                <input type="radio" id="FRITAS PALITO CHEDDAR E BACON" name="acompanhamento" value="fritas palito cheddar bacon">
+                <label for="acompanhamento">FRITAS PALITO CHEDDAR E BACON</label>
+            </div>
+                <br>
+                <br>
+            <div class="acompanhamento-box">  
+                <input type="radio" id="PALITO DE MUSSARELA" name="acompanhamento" value="palito de mussarela">
+                <label for="acompanhamento">PALITO DE MUSSARELA</label>
+            </div>
+            </div>
+                
+        </div>
+        <div id = "bebidas">
+            <div class="bebidas-titulo">
+                <strong>BEBIDAS</strong>
+            </div>
+            <br>
+            <div>
+            <div class="bebidas-box">
+                <input type="radio" id="COCA COLA" name="bebidas" value="coca cola" checked>
+                <label for="bebidas">COCA COLA</label>
+            </div>
+                <br>
+                <br>
+            <div class="bebidas-box">   
+                <input type="radio" id="GUARANA" name="bebidas" value="guarana">
+                <label for="bebidas">GUARANA</label>
+            </div>
+                <br>
+                <br>
+            <div class="bebidas-box">
+                <input type="radio" id="SPRITE" name="bebidas" value="sprite">
+                <label for="bebidas">SPRITE</label>
+            </div>
+                <br>
+                <br>
+            <div class="bebidas-box">
+                <input type="radio" id="CERVEJA ARTESANAL" name="bebidas" value="cerveja artesanal">
+                <label for="bebidas">CERVEJA ARTESANAL</label>
+            </div>    
+                <br>
+                <br>
+            <div class="bebidas-box">    
+                <input type="radio" id="H2O" name="bebidas" value="h2o">
+                <label for="bebidas">H2O</label>
+            </div>
+                <br>
+                <br>
+            <div class="bebidas-box">    
+                <input type="radio" id="SUCO DE LARANJA" name="bebidas" value="suco de laranja">
+                <label for="bebidas">SUCO DE LARANJA</label>
+            </div>
+                <br>
+                <br>
+            <div class="bebidas-box">  
+                <input type="radio" id="SUCO DE MARACUJA" name="bebidas" value="suco de maracuja">
+                <label for="bebidas">SUCO DE MARACUJA</label>
+            </div>
+            </div>
+        </div>      
+            <!-- FIM DOS INGREDIENTES -->
+    </div>
+        <button id = "irparapagamento">
+           <br>
+           <div class="pagamento-titulo">
+               IR PARA PAGAMENTO
+            </div>
+        </button>
+    </form>
+</section>
+    <%- include('./partials/footer.ejs') %> 
+    <!-- <footer>
+        <section class="base">
+            <article class="logotipoComisBebisFooter">
+                <img src="img/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis">
+            </article>
+            <article class="contato">
+                <p>Telefone: (00) 00000-0000<br>Endereço: Rua teste teste teste, n00 - Jd Teste <br>Teste/TT</p>
+            </article>
+            <article class="mapa">
+                <img src="img/Mapa.jpg" alt="Mapa">
+            </article>
+        <article class="tiposPagamento">
+                <div class="textoTiposPagamento">
+                     <p>Tipos de Pagamento</p>
+                </div>
+            <div class="logosPagamento">
+                <div class="formaPgto1">
+                    <img src="img/Logo-MasterCard.jpg" hspace="5" alt="Logo Mastercard">
+                </div>
+                <div class="formaPgto2">
+                    <img src="img/Logo-Visa.jpg" hspace="5" alt="Logo Visa">
+                </div>
+                <div class="formaPgto3">
+                    <img src="img/Logo-Elo.jpg" hspace="5" alt="Logo Elo">
+                </div>
+            </div>
+        </article>
+        <article class="compartilhe">
+            <div class="textoCompartilhe">
+                <p>Compartilhe</p>
+            </div>
+            <div class="logosCompartilhe">
+                <div class="logoCompartilhe">
+                     <img class="logosRedesSociais" src="img/Icone-Facebook.png" hspace="3" alt="Ícone Facebook">
+            </div>
+            <div class="logoCompartilhe">
+                <img class="logosRedesSociais" src="img/Icone-Instagram.png" hspace="3" alt="Ícone Instagram">
+            </div>
+            <div class="logoCompartilhe">
+                <img class="logosRedesSociais" src="img/Icone-Whatsapp.png" hspace="3" alt="Ícone Whatsapp">
+            </div>
+            <div class="logoCompartilhe">
+                 <img class="logosRedesSociais" src="img/Icone-Email.png" hspace="3" alt="Ícone E-mail">
+            </div>
+        </div>
+        </article>
+        </section>
+    </footer> -->
+    </body>
+</html>

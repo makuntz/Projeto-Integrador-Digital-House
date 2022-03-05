@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/css-pg-carrinho.css">
+    <link rel="stylesheet" href="stylesheets/css-header.css">
+    <link rel="stylesheet" href="stylesheets/css-footer.css">
+    <title>carrinho</title>
+</head>
+<body>
+    <%- include('./partials/header') %>
+    <!-- <header class="header"> 
+        <img class="logotipoheader" src="logotipo.jpeg" alt="logotipo">
+        <img class="carrinho" src="carrinho.jpeg" alt="carrinho">
+    </header> -->
+    <main>
+        <section>
+            <ul class="lista" style="list-style-type:none;">
+                <li class="lanche">Lanche</li>
+                <li class="acompanhamento">Acompanhamento</li>
+                <li class="bebida">Bebida</li>
+            </ul>
+        </section>
+        <section>
+            <ul class = "alterar" style="list-style-type:none;">
+                <li class = "alterar1">Alterar pedido</li>
+                <li class = "alterar2">Alterar pedido</li>
+                <li class = "alterar3">Alterar pedido</li>
+            </ul>
+            <p class="pagamento">ir para o pagamento</p>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %> 
+    <!-- <footer class="footer">
+        <img src="logotipo.jpeg" alt="logitipo">
+        <img src= "mapa.jpeg" alt="localização">
+        <img src= "pagamentos.jpg" alt=pagamentos> 
+        <img src= "contato.jpg" alt=contato>      
+    </footer> -->
+</body>
+</html>

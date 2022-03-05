@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="stylesheets/css-card-login-e-registro.css">
+
+    <title></title>
+    
+</head>
+
+<body>
+<!-- card-l-login -->
+
+<div class="card-l-container" id="card-l-container">
+
+    <div class="card-l" id="card-l">  	
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+            <div class="sign-in">
+                <form>
+                    <div class="times-holder"><p class="times" onclick="closeNavDrawer()">&times;</p></div>
+                    <label for="chk"  class="sign-inFormLabel" id="sign-inFormLabel" aria-hidden="true">Acessar conta</label>
+                    <input type="email" name="email" placeholder="Email ou telefone" required="">
+                    <input type="password" name="pswd" placeholder="Senha" required="">
+
+                    <div class="formTextBox">  <nobr>
+                                <label for="manterLogado" class="text keep">
+                                    <div class="clear"></div>
+                                    <input type="checkbox" id="manterLogado" name="Mantenha-me logado">
+                                    <span>Mantenha-me logado</span>
+                                </label> </nobr>
+                    </div>
+                    <div class="formTextBox">
+                                <label for="forgotPass" class="text">
+                                    Esqueçeu sua senha? <a href="" id="forgotPass">recupere aqui</a>
+                                </label>
+                    </div>
+                    <button class="sign-in-button" >ENTRAR</button>
+                </form>
+            </div>		<!-- sign-in -->
+
+
+            <div class="sign-up" id="sign-up">
+                <form>
+                    <label for="chk" class="sign-upFormLabel" aria-hidden="true" ><span id="sign-upText0" onclick="signUpText0()">Cadastre-se aqui!</span><span id="sign-upText1" onclick="signUpText1()">Boas vindas!</span> </label>
+                    <input type="text" name="txt" placeholder="Nome de usuário" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Senha" required="">
+                    <input type="tel" name="" id="telefone" placeholder="Telefone" pattern="\(\d{2}\)\s*\d{5}-\d{4}"   maxlength="15" required>
+                    <button class="sign-up-button" >REGISTRAR</button>
+                </form>
+            </div>		<!-- sigin-up -->
+
+
+    </div>		<!-- card-l -->
+</div>		<!-- card-l-container -->
+
+
+    
+
+    
+    
+    
+    
+    <script src="javascripts/-js-card-login-e-registro.js"></script>
+
+</body>
+
+</html>

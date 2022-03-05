@@ -1,0 +1,92 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0px 1px 20px rgba(180, 87, 0, 0.65);
+   
+}
+
+main{
+    width: 100%;
+    box-shadow: 0px 1px 20px rgba(180, 87, 0, 0.65);
+}
+
+.logo1 a{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.logo2 a{
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.logo img{
+    width: 20%;
+}
+
+section{
+    width: 100%;
+    display: flex;
+}
+
+h1{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    background-color: #C4C4C4;
+    
+}
+
+.numeroCartao{
+    width: 100%;
+    margin-bottom: 2%;
+    margin-left: 0%;
+}
+
+.nomeDoCartao{
+    margin-bottom: 2%;
+}
+
+.dataValidade{
+    margin-bottom: 2%;
+}
+
+.cvv{
+    margin-top: 2%;
+}
+
+.submit1{
+    margin-top: 6%;
+    margin-bottom: 9%;
+}
+
+.submit{
+    background-color: #FFA500;
+    width: 20%;
+    height: 250%;
+    border-radius: 20px;
+    border-width: 0;
+    cursor: pointer;
+}
+

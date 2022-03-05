@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comis e Bebis</title>
+    <link rel="stylesheet" href="stylesheets/css-pg-cadastro-cartao.css">
+    <link rel="stylesheet" href="stylesheets/css-header.css">
+    <link rel="stylesheet" href="stylesheets/css-footer.css">
+</head>
+<body>
+    <%- include('./partials/header') %>
+    <!-- <header class="logo">
+        <div class="logo1">
+            <a href=""><img src="image/Logotipo-ComisBebis.png" alt=""></a> 
+        </div>
+        <div class="logo2" >
+            <a href=""><img src="image/carrinho.png" alt="" id="carrinho"></a>   
+        </div>
+    </header> -->
+    <section>
+        <div class="wrapper">
+            <div class="container">
+                <article>
+                    <h1>
+                        Cartão de Crédito
+                    </h1>
+                    <form action="">
+                        <div class="numeroCartao">
+                            <label for="first">Número do Cartão</label>
+                            <input type="text" id="first" class="cc-num" type="text" maxlength="4">
+                            <input type="text" id="second" class="cc-num" type="text" maxlength="4">
+                            <input type="text" id="third" class="cc-num" type="text" maxlength="4">
+                            <input type="text" id="fourth" class="cc-num" type="text" maxlength="4">
+                        </div>
+                        <div class="nomeDoCartao">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" class="" type="text" maxlength="100">
+                        </div>
+                        <div class="dataValidade">
+                            <div>
+                                <label for="expiry">Data de Validade</label>
+                                <input type="text" class="month" id="expiry" placeholder="02">
+                                <input type="text" class="year" id="" placeholder="2017">
+                            </div>
+                            <div class="cvv">
+                                <label for="cvv">CVV No.</label><a href="#what">?</a>
+                                <input type="text" class="csv">
+                            </div>
+                        </div>
+                        <div class="submit1">
+                            <input type="submit" class="submit" value="Cadastrar Cartão">
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </section>
+    <%- include('./partials/footer.ejs') %>
+    <!-- <footer>
+        <div class="logoFooter1">
+            <img src="image/Logotipo-ComisBebis.png" alt="" id="logoFooter">
+        </div>
+        
+        <div class="contato">
+            <p>Telefone (00) 0000-0000<br>Rua teste, 00<br>Jd Teste<br>Teste/TT</p>
+        </div>
+        
+        <div class="mapa1">
+            <img src="image/Mapa.jpg" alt="" id="mapa">
+        </div>
+        
+        <div class="tipoPagamento">
+            <div>
+                <p>Tipos de Pagamento</p>
+            </div>
+            <div class="bandeiras">
+                <img src="image/mastercard.jpeg" alt="" id="master">
+                <img src="image/visa.jpeg" alt="" id="visa">
+                <img src="image/elo.jpeg" alt="" id="elo">
+            </div>
+        </div>
+        
+        <div class="compartilhar">
+            <p>Compartilhe</p>
+            <div class="redeSocial"> 
+                <img src="image/facebook.png" alt="">
+                <img src="image/instagram.png" alt="">
+                <img src="image/whatsapp.png" alt="">
+                <img src="image/email.png" alt="">
+            </div>
+        </div>        
+    </footer> -->
+</body>
+</html>
