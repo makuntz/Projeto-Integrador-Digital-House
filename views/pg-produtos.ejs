@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="stylesheets/css-pg-produtos.css">
     <link rel="stylesheet" href="stylesheets/css-header.css">
     <link rel="stylesheet" href="stylesheets/css-footer.css">
+    <script>
+        const valueC = document.getElementsByName('pao')
+        let arr = []
+
+        function getValues() {
+            for (let i=0;i<valueC.lenght;i++){
+                if (valueC[i].checked == true){
+                    const x = valueC[i].value
+                    arr.push(x)
+                    console.log(arr)
+                }
+            }
+        }
+
+    </script>
 </head>
 <body background= "images/pg-home/Banner-Promocao-3-ComisBebis.jpg">
     <%- include('./partials/header') %>
-    <!-- <header>
-        <div>
-            <img id="logotipoComisBebisHeader" src="img/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis">
-        </div>
-        <article id="botaoCarrinho">
-            <img id="imgBotaoCarrinho" src="img/Botao-CarrinhoCompras-ComisBebis.png" alt="Botão Carrinho de Compras Comis&Bebis">
-            <p id="textoBotaoCarrinho">
-                CARRINHO
-            </p>
-        </article>
-    </header> -->
     <main>
             <!-- COMEÇO DOS INGREDIENTES -->
     <section class="container-ingredientes">
-        <form action="teste.php">
+        <form action="/carrinho" method="post">
         
             <div id = "pao">
            <div class ="pao-titulo"> <strong>PÃO</strong> </div>
@@ -358,7 +362,7 @@
         </div>      
             <!-- FIM DOS INGREDIENTES -->
     </div>
-        <button id = "irparapagamento">
+        <button id = "irparapagamento" >
            <br>
            <div class="pagamento-titulo">
                IR PARA PAGAMENTO
@@ -367,53 +371,5 @@
     </form>
 </section>
     <%- include('./partials/footer.ejs') %> 
-    <!-- <footer>
-        <section class="base">
-            <article class="logotipoComisBebisFooter">
-                <img src="img/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis">
-            </article>
-            <article class="contato">
-                <p>Telefone: (00) 00000-0000<br>Endereço: Rua teste teste teste, n00 - Jd Teste <br>Teste/TT</p>
-            </article>
-            <article class="mapa">
-                <img src="img/Mapa.jpg" alt="Mapa">
-            </article>
-        <article class="tiposPagamento">
-                <div class="textoTiposPagamento">
-                     <p>Tipos de Pagamento</p>
-                </div>
-            <div class="logosPagamento">
-                <div class="formaPgto1">
-                    <img src="img/Logo-MasterCard.jpg" hspace="5" alt="Logo Mastercard">
-                </div>
-                <div class="formaPgto2">
-                    <img src="img/Logo-Visa.jpg" hspace="5" alt="Logo Visa">
-                </div>
-                <div class="formaPgto3">
-                    <img src="img/Logo-Elo.jpg" hspace="5" alt="Logo Elo">
-                </div>
-            </div>
-        </article>
-        <article class="compartilhe">
-            <div class="textoCompartilhe">
-                <p>Compartilhe</p>
-            </div>
-            <div class="logosCompartilhe">
-                <div class="logoCompartilhe">
-                     <img class="logosRedesSociais" src="img/Icone-Facebook.png" hspace="3" alt="Ícone Facebook">
-            </div>
-            <div class="logoCompartilhe">
-                <img class="logosRedesSociais" src="img/Icone-Instagram.png" hspace="3" alt="Ícone Instagram">
-            </div>
-            <div class="logoCompartilhe">
-                <img class="logosRedesSociais" src="img/Icone-Whatsapp.png" hspace="3" alt="Ícone Whatsapp">
-            </div>
-            <div class="logoCompartilhe">
-                 <img class="logosRedesSociais" src="img/Icone-Email.png" hspace="3" alt="Ícone E-mail">
-            </div>
-        </div>
-        </article>
-        </section>
-    </footer> -->
     </body>
 </html>
