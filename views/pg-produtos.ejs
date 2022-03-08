@@ -8,21 +8,7 @@
     <link rel="stylesheet" href="stylesheets/css-pg-produtos.css">
     <link rel="stylesheet" href="stylesheets/css-header.css">
     <link rel="stylesheet" href="stylesheets/css-footer.css">
-    <script>
-        const valueC = document.getElementsByName('pao')
-        let arr = []
-
-        function getValues() {
-            for (let i=0;i<valueC.lenght;i++){
-                if (valueC[i].checked == true){
-                    const x = valueC[i].value
-                    arr.push(x)
-                    console.log(arr)
-                }
-            }
-        }
-
-    </script>
+    
 </head>
 <body background= "images/pg-home/Banner-Promocao-3-ComisBebis.jpg">
     <%- include('./partials/header') %>
@@ -362,7 +348,7 @@
         </div>      
             <!-- FIM DOS INGREDIENTES -->
     </div>
-        <button id = "irparapagamento" >
+        <button id = "irparapagamento">
            <br>
            <div class="pagamento-titulo">
                IR PARA PAGAMENTO

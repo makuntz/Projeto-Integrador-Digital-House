@@ -17,7 +17,7 @@ router.get('/login', indexController.login);
 
 router.get('/cartao', indexController.cadastroCartao);
 
-// router.post('/carrinho', indexController.enviarPedidoCarrinho)
+router.post('/carrinho', indexController.enviarPedidoCarrinho)
 
 
 
