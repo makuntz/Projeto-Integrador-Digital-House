@@ -8,6 +8,10 @@ const indexController = {
     produtos: (req, res) => {
         res.render('pg-produtos')
     },
+    
+    produtos2: (req, res) => {
+        res.render('pg-produtos2-teste')
+    },
 
     carrinho: (req, res) => {
         res.render('pg-carrinho')

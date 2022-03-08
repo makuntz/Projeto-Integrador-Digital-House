@@ -1,8 +1,11 @@
-<header>
+<header>    
+
     <section class="topo">
         <div class="logoComisBebisHeader">
-            <img id="logotipoComisBebisHeader" src="images/header/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis">
+            <a href="/"><img id="logotipoComisBebisHeader" src="images/header/Logotipo-ComisBebis.png" alt="Logotipo Comis&Bebis"></a>
+            
         </div>
+                
         <nav class="menu">
             <div class="botaoMonteDoSeuJeito">
                 <a href="/produtos1"><p>MONTE DO SEU JEITO!</p></a>
@@ -11,11 +14,29 @@
                 <a href="/carrinho"><img id="imgBotaoCarrinho" src="images/header/Botao-CarrinhoCompras-ComisBebis.png" alt="Botão Carrinho de Compras Comis&Bebis"></a>
                 <p id="textoBotaoCarrinho">
                     CARRINHO
-                </p>
+                   </p>
+                </a> 
             </div>            
             <div id="loginRegistro" onclick="openNavDrawer()">
-                <p>Login/Registro</p>
-            </div>
+                <p>LOGIN/REGISTRO</p>
+            </div>     
         </nav>
+        <!-- MENU NAVEGAÇÃO MOBILE -->
+
+        <button id="btn_navMenuHamburguer" onclick="menuHamburguer()" >&#9776;</button>
+
+        <nav class="navMenuMobile" id="navMenuMobile">
+            <ul id="ulMenuMobile">
+                <li><a href="/produtos">MONTE DO SEU JEITO</a></li>
+                <li><a href="/carrinho">CARRINHO</a></li>
+                <li onclick="openNavDrawer()">LOGIN/REGISTRO</li>
+            </ul>
+        </div>
+
     </section>
+
+    <script src="javascripts/js-menuHamburguer.js"></script> 
+    <script src="javascripts/js-card-login-e-registro.js"></script>   
+    
 </header>
+
