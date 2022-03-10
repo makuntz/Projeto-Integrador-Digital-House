@@ -12,13 +12,27 @@
 <body>
 
     <%- include('./partials/header') %>
-    
     <main>
+        
         <section>
             <ul class="lista" style="list-style-type:none;">
                 <li class="lanche">Lanche</li>
+                    <ul>
+                        <li>Pao: <%= servico.pao%></li>
+                        <li>Carne: <%= servico.carne%></li>
+                        <li>Ponto da Carne: <%= servico.ponto%></li>
+                        <li>Queijo: <%= servico.queijo%></li>
+                        <li>Molho: <%= servico.molho%></li>
+                        <li>Adicionais: <%= servico.adicionais%></li>
+                    </ul>
                 <li class="acompanhamento">Acompanhamento</li>
+                    <ul>
+                        <li>Acompanhamento: <%= servico.acompanhamento%> </li>
+                    </ul>
                 <li class="bebida">Bebida</li>
+                    <ul>
+                        <li>Bebida: <%= servico.bebidas%> </li>
+                    </ul>
             </ul>
         </section>
         <section>
@@ -31,7 +45,7 @@
         </section>
     </main>
     <%- include('./partials/footer.ejs') %> 
-    
+
 </body>
 </html>
 

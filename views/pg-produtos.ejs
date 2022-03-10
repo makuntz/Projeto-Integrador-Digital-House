@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="stylesheets/css-pg-produtos.css">
     <link rel="stylesheet" href="stylesheets/css-header.css">
     <link rel="stylesheet" href="stylesheets/css-footer.css">
+    
 </head>
 
 
 <body background= "images/pg-home/Banner-Promocao-3-ComisBebis.jpg">
     <%- include('./partials/header') %>
-    
+
     <main>
             <!-- COMEÇO DOS INGREDIENTES -->
     <section class="container-ingredientes">
-        <form action="teste.php">
+        <form action="/carrinho" method="post">
         
             <div id = "pao">
            <div class ="pao-titulo"> <strong>PÃO</strong> </div>
@@ -359,11 +360,5 @@
     </form>
 </section>
     <%- include('./partials/footer.ejs') %> 
-    
-
-</body>
+ </body>
 </html>
-
-
-<!-- ADD CARD LOGIN & REGISTRO -->
-<%- include("card-login-e-registro"); %> 

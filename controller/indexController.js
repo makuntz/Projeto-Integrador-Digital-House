@@ -27,6 +27,11 @@ const indexController = {
 
     cadastroCartao: (req, res) => {
         res.render('pg-cadastro-cartao')
+    },
+
+    enviarPedidoCarrinho: (req, res) => {
+        const servico = req.body
+        res.render('pg-carrinho', {servico: servico})
     }
 
 }
