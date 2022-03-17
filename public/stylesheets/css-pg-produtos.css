@@ -4,6 +4,8 @@ body {
     height: 60%;
     width: 100%;
     align-items: baseline;
+    background-image: url("../images/FundoDesktop.png");
+    background-size: cover;
 }
 
 strong {
@@ -295,4 +297,11 @@ strong {
 
 main {
     margin-block:650px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+         background-image: url("../images/FundoMobile.png");
+         background-size: cover;
+    }    
 }
