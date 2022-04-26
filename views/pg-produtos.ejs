@@ -8,14 +8,29 @@
     <link rel="stylesheet" href="stylesheets/css-pg-produtos.css">
     <link rel="stylesheet" href="stylesheets/css-header.css">
     <link rel="stylesheet" href="stylesheets/css-footer.css">
+    <!-- <script>
+        const ingredientes = []
+        //SE FOR RODAR ESSA FUNCAO, NAO ESQUEDCER DE CHAMAR ONCLICK NO BUTTON
+        // function enviar (){
+        //     const item1 = document.querySelector('input[name="pao"]:checked').value;
+        //     const item2 = document.querySelector('input[name="carne"]:checked').value;
+        //     const item3 = document.querySelector('input[name="ponto"]:checked').value;
+
+            
+        //     ingredientes.push(item1, item2, item3)
+        //     console.log(ingredientes)
+        // }
+        
+    </script> -->
     
 </head>
+    <%- include("card-login-e-registro"); %> 
 <body background= "images/pg-home/Banner-Promocao-3-ComisBebis.jpg">
     <%- include('./partials/header') %>
     <main>
             <!-- COMEÇO DOS INGREDIENTES -->
     <section class="container-ingredientes">
-        <form action="/carrinho" method="post">
+        <form action="/carrinho" method="POST">
         
             <div id = "pao">
            <div class ="pao-titulo"> <strong>PÃO</strong> </div>
@@ -348,14 +363,16 @@
         </div>      
             <!-- FIM DOS INGREDIENTES -->
     </div>
+        
         <button id = "irparapagamento">
            <br>
            <div class="pagamento-titulo">
-               IR PARA PAGAMENTO
+               IR PARA CARRINHO
             </div>
         </button>
     </form>
 </section>
     <%- include('./partials/footer.ejs') %> 
     </body>
+    
 </html>

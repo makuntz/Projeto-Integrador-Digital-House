@@ -12,7 +12,6 @@
 <body>
     <%- include('./partials/header') %>
     <main>
-        
         <section>
             <ul class="lista" style="list-style-type:none;">
                 <li class="lanche">Lanche</li>
@@ -23,8 +22,8 @@
                         <li>Queijo: <%= servico.queijo%></li>
                         <li>Molho: <%= servico.molho%></li>
                         <li>Adicionais: <%= servico.adicionais%></li>
-                    </ul>
-                <li class="acompanhamento">Acompanhamento</li>
+                    </ul> 
+                        <li class="acompanhamento">Acompanhamento</li>
                     <ul>
                         <li>Acompanhamento: <%= servico.acompanhamento%> </li>
                     </ul>
@@ -34,13 +33,14 @@
                     </ul>
             </ul>
         </section>
+        
         <section>
             <ul class = "alterar" style="list-style-type:none;">
-                <li class = "alterar1">Alterar pedido</li>
-                <li class = "alterar2">Alterar pedido</li>
-                <li class = "alterar3">Alterar pedido</li>
+                <a href="/produtos1"><li class = "alterar1">Alterar pedido</li></a>
+                <!-- <li class = "alterar2">nao sei o que isso ta fazendo aqui</li> -->
+                <!-- <li class = "alterar3">Alterar pedido</li> -->
             </ul>
-            <p class="pagamento">ir para o pagamento</p>
+            <a href="/pagamento"><p class="pagamento">ir para o pagamento</p></a>
         </section>
     </main>
     <%- include('./partials/footer.ejs') %> 

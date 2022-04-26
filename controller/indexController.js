@@ -27,7 +27,7 @@ const indexController = {
 
     enviarPedidoCarrinho: (req, res) => {
         const servico = req.body
-        res.render('pg-carrinho', {servico: servico})
+        res.render('pg-carrinho', {servico})
     }
 
 }
