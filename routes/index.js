@@ -7,6 +7,7 @@ const indexController = require('../controller/indexController')
 
 router.get('/', indexController.home);
 
+
 router.get('/produtos1', indexController.produtos);
 
 router.get('/carrinho', indexController.carrinho);

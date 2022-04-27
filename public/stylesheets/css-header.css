@@ -52,11 +52,16 @@ header {
     align-items: center;
     background-color: #ffa500;
     border-radius: 50px;
-    line-height: 4.2vw;
+    line-height: 5vw;
     font-weight: bold;
     font-size: min(max(8px, 1.1vw), 18px);
     width: 30%;
-    justify-content: center;
+    justify-content: center;    
+ }
+
+ .botaoMonteDoSeuJeito a {
+    color: white;    
+    text-decoration: none;
  }
 
 .botaoCarrinho {
@@ -71,6 +76,7 @@ header {
 }
 
 #textoBotaoCarrinho {
+    text-align: center;
     color: white;
     margin-top: 0rem;
     font-weight: bold;
@@ -89,6 +95,60 @@ header {
     align-items: center;    
 }
 
+#btn_navMenuHamburguer {
+    display: none;
+}
+.navMenuMobile {
+    display: none;
+}
+
 /* INICIO FORMATOS RESPONSIVOS */
 
-/* Versão mobile deixar apenas menu nav com formato "hamburguer" */
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    
+    #btn_navMenuHamburguer {
+        display: block;
+        width: 30px;
+        background-color: #ffa500;
+        border-style: none;
+        margin-right: 5vw;
+    }    
+    
+    .navMenuMobile {
+        list-style: none;
+        background-color: #ffa500;
+        width: 100vw;
+        z-index: 3;
+        position: absolute;
+        top: 10vw;
+        left: 0%;
+        height: 40vw;        
+        flex-direction: column;
+        text-align: center;  
+        cursor: pointer;      
+    }
+
+    #ulMenuMobile {
+        display: flex;
+        flex-direction: column;
+        padding: 4vw;  
+    }
+
+    #ulMenuMobile li {
+        display: flex;
+        flex-direction: column;
+        padding: 3vw;        
+    }
+     
+    .navMenuMobile a {
+        text-decoration: none;
+        color: black;
+    }
+    .navMenuMobile a:hover {
+        background-color: #00000080 ;
+    }
+    
+}    
