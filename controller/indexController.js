@@ -1,4 +1,4 @@
-
+let servico;
 
 const indexController = {
     home: (req, res) => {
@@ -8,9 +8,18 @@ const indexController = {
     produtos: (req, res) => {
         res.render('pg-produtos')
     },
+    
+    produtos2: (req, res) => {
+        res.render('pg-produtos2-teste')
+    },
 
     carrinho: (req, res) => {
-        res.render('pg-carrinho')
+        servico  = req.body.servico
+
+        console.log(req)
+        if(servico){
+            res.render('pg-carrinho', {servico: servico})
+        } else (res.send('<h1>Nao tem produto</h1>'))
     },
 
     pagamento: (req, res) => {
@@ -26,7 +35,7 @@ const indexController = {
     },
 
     enviarPedidoCarrinho: (req, res) => {
-        const servico = req.body
+        servico = req.body
         res.render('pg-carrinho', {servico})
     }
 
