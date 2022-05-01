@@ -14,11 +14,10 @@ const indexController = {
     },
 
     carrinho: (req, res) => {
-        servico  = req.body.servico
+        servico  = req.body
 
-        console.log(req)
         if(servico){
-            res.render('pg-carrinho', {servico: servico})
+            res.render('pg-carrinho', {servico})
         } else (res.send('<h1>Nao tem produto</h1>'))
     },
 

@@ -19,8 +19,8 @@ strong {
 
 #pao{
     position: absolute;
-    width: 220px;
-    height: 572px;
+    width: 300px;
+    height: 300px;
     left: 17px;
     top: 210px;
     background: #C4C4C4;
@@ -30,7 +30,7 @@ strong {
 
 .pao-titulo{
     position:center;
-    width: 220px;
+    width: 300px;
     height: 43px;
     left: 0px;
     top: 0px;
@@ -208,8 +208,8 @@ strong {
 #acompanhamento{
     position: absolute;
     width: 310px;
-    height: 35.75rem;
-    left: 1100px;
+    height: 300px;
+    left: 500px;
     top: 210px;
     background: #C4C4C4;
     text-align: center;
@@ -239,8 +239,8 @@ strong {
 #bebidas{
     position: absolute;
     width: 218px;
-    height: 27.375rem;
-    left: 1450px;
+    height: 300PX;
+    left: 1000px;
     top: 210px;
     background: #C4C4C4;
     text-align: start;
@@ -270,9 +270,9 @@ strong {
 #irparapagamento{
     position: absolute;
     width: 13.75rem;
-    height: 5.25rem;
-    left: 1450px;
-    top:680px;
+    height: 5rem;
+    left: 1000px;
+    top:600px;
     background: #FFA500;
     border-radius: 15px;
     text-align:center;
