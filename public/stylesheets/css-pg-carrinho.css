@@ -42,7 +42,14 @@ body {
     box-sizing: border-box;
     height: 60vh;
     flex-direction: column;
+    height: 80px;
 }
+    
+
+#botao {
+    margin-top: 0px;
+}
+
 
 .alterar1{
     background: orange;
@@ -50,6 +57,7 @@ body {
     border-radius: 20px;
     padding: 10px;
     width: fit-content;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
 }

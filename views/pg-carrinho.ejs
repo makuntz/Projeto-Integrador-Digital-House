@@ -13,19 +13,18 @@
 
     <%- include('./partials/header') %>
     <main>
-        
         <section>
             <ul class="lista" style="list-style-type:none;">
                 <li class="lanche">Lanche</li>
                     <ul>
-                        <li>Pao: <%= servico.pao%></li>
-                        <li>Carne: <%= servico.carne%></li>
-                        <li>Ponto da Carne: <%= servico.ponto%></li>
-                        <li>Queijo: <%= servico.queijo%></li>
+                        <li>Lanche: <%= servico.pao%></li>
+                        <!-- <li>Carne: <%= servico.carne%></li> -->
+                        <!-- <li>Ponto da Carne: <%= servico.ponto%></li> -->
+                        <!-- <li>Queijo: <%= servico.queijo%></li>
                         <li>Molho: <%= servico.molho%></li>
-                        <li>Adicionais: <%= servico.adicionais%></li>
-                    </ul>
-                <li class="acompanhamento">Acompanhamento</li>
+                        <li>Adicionais: <%= servico.adicionais%></li> -->
+                    </ul> 
+                        <li class="acompanhamento">Acompanhamento</li>
                     <ul>
                         <li>Acompanhamento: <%= servico.acompanhamento%> </li>
                     </ul>
@@ -35,13 +34,12 @@
                     </ul>
             </ul>
         </section>
-        <section>
-            <ul class = "alterar" style="list-style-type:none;">
-                <li class = "alterar1">Alterar pedido</li>
-                <li class = "alterar2">Alterar pedido</li>
-                <li class = "alterar3">Alterar pedido</li>
+        
+        <section id="botao">
+            <ul class = "alterar">
+                <a href="/produtos1"><li class = "alterar1">Alterar pedido</li></a>
             </ul>
-            <p class="pagamento">ir para o pagamento</p>
+            <a href="/pagamento"><p class="pagamento">ir para o pagamento</p></a>
         </section>
     </main>
     <%- include('./partials/footer.ejs') %> 
@@ -52,3 +50,4 @@
 
 <!-- ADD CARD LOGIN & REGISTRO -->
 <%- include("card-login-e-registro"); %> 
+
