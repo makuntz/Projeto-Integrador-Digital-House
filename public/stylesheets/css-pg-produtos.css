@@ -4,7 +4,10 @@ body {
     height: 60%;
     width: 100%;
     align-items: baseline;
+    background-image: url("../images/FundoDesktop.png");
+    background-size: cover;
 }
+
 
 strong {
     align-items: center;
