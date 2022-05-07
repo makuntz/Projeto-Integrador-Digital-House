@@ -1,21 +1,15 @@
-module.exports = (sequelize, DataType)=>{
-    const Usuario = sequelize.define('Usuario',{
-        id_usuario:{
-            type:DataType.INTERGER,
-            primaryKey:true,
-            autoIncrement:true
-
-        },
-        nome:DataType.STRING,
-        email:{
-            type:DataType.STRING,
-            allowNull:false,
-        },
-        senha:DataType.STRING 
+const Usuario = (sequelize, DataTypes)=>{
+    let usuario = sequelize.define('Usuario',{
+       nome:  DataTypes.STRING,
+       sobrenome: DataTypes.STRING,
+       email: DataTypes.STRING,
+       celular: DataTypes.BIGINT
 
 },{
-    tableName:'usuario',
+    tableName:'Usuario',
     timestamps:false
 })
-return Usuario
+return usuario
 }
+
+module.exports = Usuario
