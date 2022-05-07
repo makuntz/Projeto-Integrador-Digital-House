@@ -6,7 +6,7 @@ const usuarioController = {
     cadastroUsuario: (req, res) => {
         const { nome, email, senha } = req.body
         const hash = bcrypt.hashSync(senha, saltRounds);
-        const user = { id: Date.now(), nome: nome, senha: hash, email: email }      
+        //const user = { id: Date.now(), nome: nome, senha: hash, email: email }      
 
         //res.send(bancoUser)
         res.sendStatus(200)

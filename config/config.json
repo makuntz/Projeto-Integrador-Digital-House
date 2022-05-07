@@ -3,7 +3,7 @@
     "development": {
       "username": "admin",
       "password": "Info@1234",
-      "database": "escola",
+      "database": "mydb",
       "host": "localhost",
       "dialect": "mysql",
       "port": "3306"
