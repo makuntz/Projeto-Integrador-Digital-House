@@ -1,14 +1,21 @@
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const {sequelize, Usuario} = require('../models/index')
+//const {Op} = require('sequelize')
 
 const usuarioController = {
     cadastroUsuario: (req, res) => {
-        const { nome, email, senha } = req.body
-        const hash = bcrypt.hashSync(senha, saltRounds);
-        //const user = { id: Date.now(), nome: nome, senha: hash, email: email }      
-
-        //res.send(bancoUser)
+        const { txt, email, pswd, tel} = req.body
+        const hash = bcrypt.hashSync(pswd, saltRounds);
+        const criarUsuario = async () => {
+            const user = await Usuario.create({
+                nome: txt,
+                email: email,
+                senha: hash,
+                telefone: tel
+            })
+        }
+        criarUsuario()
         res.sendStatus(200)
     },
 
@@ -44,4 +51,6 @@ const usuarioController = {
     //      return   res.render('usuario/sobre')
     //     }
      }
+
+
 module.exports = usuarioController

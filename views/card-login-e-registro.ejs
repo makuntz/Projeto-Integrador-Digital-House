@@ -44,13 +44,13 @@
 
 
             <div class="sign-up" id="sign-up">
-                <form>
+                <form method="POST" action="/users/cadastro">
                     <label for="chk" class="sign-upFormLabel" aria-hidden="true" ><span id="sign-upText0" onclick="signUpText0()">Cadastre-se aqui!</span><span id="sign-upText1" onclick="signUpText1()">Boas vindas!</span> </label>
-                    <input type="text" name="txt" placeholder="Nome de usuário" required="">
-                    <input type="email" name="email" placeholder="Email" required="">
-                    <input type="password" name="pswd" placeholder="Senha" required="">
-                    <input type="tel" name="" id="telefone" placeholder="Telefone" pattern="\(\d{2}\)\s*\d{5}-\d{4}"   maxlength="15" required>
-                    <button class="sign-up-button" >REGISTRAR</button>
+                    <input type="text" name="txt" placeholder="Nome de usuário" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="pswd" placeholder="Senha" required>
+                    <input type="tel" name="tel" id="telefone" placeholder="Telefone" required>
+                    <button class="sign-up-button" type="submit">REGISTRAR</button>
                 </form>
             </div>		<!-- sigin-up -->
 
@@ -62,3 +62,4 @@
 </body>
 
 </html>
+<!--  maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}"-->

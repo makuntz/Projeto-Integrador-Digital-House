@@ -12,3 +12,5 @@ const resultado = bcrypt.compareSync(senha,hashBanco)
 }
 
 logar()
+
+module.exports = logar

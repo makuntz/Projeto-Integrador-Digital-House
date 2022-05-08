@@ -83,52 +83,20 @@ function signUpText1() {
 	document.getElementById( "sign-upText1" ).style.display = "none";
 }
 
-var telef = "13991486078";
+function registrar() {
+	
+	console.log('teste')
+}
+// var telef = "13991486078";
 
-const rgx = /^(\d{2})(\d{5})(\d{4})/;
-const sbst = "($1) $2-$3";
-const tele = telef.replace( rgx, sbst ); 
+// const rgx = /^(\d{2})(\d{5})(\d{4})/;
+// const sbst = "($1) $2-$3";
+// const tele = telef.replace( rgx, sbst ); 
 
-console.log(
-	tele,
-	telef.replace( /^(\d{2})(\d{5})(\d{4})/, "($1) $2-$3" )
-);
+// console.log(
+// 	tele,
+// 	telef.replace( /^(\d{2})(\d{5})(\d{4})/, "($1) $2-$3" )
+// );
     
      
     
-/*    
-//9.92
-let cota = 9.92;
-let dividendo = 0.08;
-const dvnd = 0.00806451613;
-const kit = 1230.08;
-// 1230.08 = 9.92
-
-calculo( 4300 );
-
-function calculo( m ) {
-    let valorInvestidoInicial = 1230.08;
-    let ganhoMensalInicial = valorInvestidoInicial * 0.00806451613;
-    let ganhoMensal = ganhoMensalInicial;
-    let valorInvestido = valorInvestidoInicial;
-    
-    for( let it = 1; it <= m; it++ ) {
-        
-        valorInvestido += valorInvestido * dvnd;
-        ganhoMensal = valorInvestido * dvnd;
-        
-        
-    }
-    
-
-    
-    console.log( `
-    valorInvestido: ${valorInvestido}
-    ganhoMensal: ${ganhoMensal}
-    tempo investido: ${m/12} 
-    ` )
-    
-    
-    
-}
- */
