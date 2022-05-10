@@ -16,41 +16,23 @@ const usuarioController = {
             })
         }
         criarUsuario()
-        res.sendStatus(200)
     },
 
-    login: async (req, res) => {
-        const resposta = await Usuario.findAll()
-        console.log('xablau')
-        return res.json(resposta)
-            
-        // res.sendStatus(200)
-        //res.render('card-login-e-registro')
-    },
-
-        //verificar a questao do banco
-    // logar: (req, res) => { 
-    //     const { email, senha } = req.body
-    //     for (const user of bancoUser) {
-    //         // if (user.email == email) {
-    //         //     const resultadoSenha = bcrypt.compareSync(senha, user.senha)
-    //         //     if (resultadoSenha == true) {
-    //         //         return res.send("usuario logado")
-    //         //     }
-    //         // }
-    //         const resultadoSenha = bcrypt.compareSync(senha, user.senha)
-    //         if (user.email == email && resultadoSenha == true ) {
-    //            // res.cookie('user',user.email )
-    //             req.session.user = user.email   
-    //             return res.send("usuario logado")
-    //         }
-    //     }
-    //     return res.send("usario ou senha incorreto")
-    //     },
-    //     sobre: (req, res) => {
-    //      return   res.render('usuario/sobre')
-    //     }
-     }
+    login: async (req, res) => { 
+        const { email, pswd} = req.body
+        const user = await Usuario.findOne({ where: { email: email } });
+        if (user === null) {
+            res.send('Usuario nao logado');
+        } else {
+            const resultadoSenha = bcrypt.compareSync(pswd, user.senha)
+            if(resultadoSenha){
+                res.send('usuario logado')
+            }
+        }   
+    }
+    
+    
+    }
 
 
 module.exports = usuarioController
