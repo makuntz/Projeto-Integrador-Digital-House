@@ -20,10 +20,10 @@
         <input type="checkbox" id="chk" aria-hidden="true">
 
             <div class="sign-in">
-                <form>
+                <form method="POST" action="/users/login">
                     <div class="times-holder"><p class="times" onclick="closeNavDrawer()">&times;</p></div>
                     <label for="chk"  class="sign-inFormLabel" id="sign-inFormLabel" aria-hidden="true">Acessar conta</label>
-                    <input type="email" name="email" placeholder="Email ou telefone" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
                     <input type="password" name="pswd" placeholder="Senha" required="">
 
                     <div class="formTextBox">  <nobr>
@@ -38,7 +38,7 @@
                                     Esqueçeu sua senha? <a href="" id="forgotPass">recupere aqui</a>
                                 </label>
                     </div>
-                    <button class="sign-in-button" >ENTRAR</button>
+                    <button class="sign-in-button" type="submit">ENTRAR</button>
                 </form>
             </div>		<!-- sign-in -->
 
