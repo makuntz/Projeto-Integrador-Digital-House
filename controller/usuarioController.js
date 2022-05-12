@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-const {sequelize, Usuario} = require('../models/index')
-//const {Op} = require('sequelize')
+const {sequelize, Usuario} = require('../models/index');
+
 
 const usuarioController = {
     cadastroUsuario: (req, res) => {
@@ -16,6 +16,7 @@ const usuarioController = {
             })
         }
         criarUsuario()
+        res.redirect('/')
     },
 
     login: async (req, res) => { 
@@ -25,11 +26,14 @@ const usuarioController = {
             res.send('Usuario nao logado');
         } else {
             const resultadoSenha = bcrypt.compareSync(pswd, user.senha)
-            if(resultadoSenha){
-                res.send('usuario logado')
+            if(resultadoSenha && email == user.email){
+                req.session.user = email
+                res.redirect('/')
+                console.log(req.session)
             }
         }   
     }
+
 }
 
 
