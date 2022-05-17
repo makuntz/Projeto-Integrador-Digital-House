@@ -9,20 +9,30 @@
     <link rel="stylesheet" href="stylesheets/css-footer.css">
     <title>carrinho</title>
 </head>
+<%- include("card-login-e-registro"); %> 
 <body>
-
     <%- include('./partials/header') %>
+
+    <!-- <script>
+        function pagar() {
+            const teste = document.getElementById('bebida')
+            fetch('http://localhost:3000/pagamento', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({bebida: teste})
+            }).then(res => {
+            console.log("Request complete! response:", res);
+            });
+        } -->
+    <!-- </script> -->
     <main>
         <section>
             <ul class="lista" style="list-style-type:none;">
                 <li class="lanche">Lanche</li>
                     <ul>
                         <li>Lanche: <%= servico.pao%></li>
-                        <!-- <li>Carne: <%= servico.carne%></li> -->
-                        <!-- <li>Ponto da Carne: <%= servico.ponto%></li> -->
-                        <!-- <li>Queijo: <%= servico.queijo%></li>
-                        <li>Molho: <%= servico.molho%></li>
-                        <li>Adicionais: <%= servico.adicionais%></li> -->
                     </ul> 
                         <li class="acompanhamento">Acompanhamento</li>
                     <ul>
@@ -36,10 +46,12 @@
         </section>
         
         <section id="botao">
+            <a href="/pagamento"><button class="pagamento">ir para o pagamento</button></a>
             <ul class = "alterar">
                 <a href="/produtos1"><li class = "alterar1">Alterar pedido</li></a>
             </ul>
-            <a href="/pagamento"><p class="pagamento">ir para o pagamento</p></a>
+            
+            <!-- <button class="pagamento" type="button">Ir para Pagamento</button> -->
         </section>
     </main>
     <%- include('./partials/footer.ejs') %> 
@@ -48,6 +60,6 @@
 </html>
 
 
-<!-- ADD CARD LOGIN & REGISTRO -->
-<%- include("card-login-e-registro"); %> 
+ <!-- ADD CARD LOGIN & REGISTRO -->
+
 
