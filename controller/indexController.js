@@ -23,7 +23,11 @@ const indexController = {
     },
 
     pagamento: (req, res) => {
-        res.render('pg-pagamento')
+        //aqui é a parte de enviar os produtos pra pg pagamento
+        req.session.servico = servico
+        console.log(req.session.servico)
+        console.log(req.session.user)
+        res.render('pg-pagamento', {servico})
     },
 
     login: (req, res) => {
@@ -36,9 +40,10 @@ const indexController = {
 
     enviarPedidoCarrinho: (req, res) => {
         servico = req.body
+        req.session.servico = servico
+        console.log(req.session.servico)
         res.render('pg-carrinho', {servico})
     }
-
 }
 
 module.exports = indexController

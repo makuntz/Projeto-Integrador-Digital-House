@@ -3,7 +3,7 @@ function validaUsuarioLogado(req, res, next) {
     if(user) {
         next()
     } else {
-        res.redirect('/login')
+        res.redirect('/')
     }
 }
 

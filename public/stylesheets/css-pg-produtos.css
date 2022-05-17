@@ -22,7 +22,7 @@ strong {
 
 #pao{
     position: absolute;
-    width: 300px;
+    width: 400px;
     height: 300px;
     left: 17px;
     top: 210px;
@@ -33,7 +33,7 @@ strong {
 
 .pao-titulo{
     position:center;
-    width: 300px;
+    width: 400px;
     height: 43px;
     left: 0px;
     top: 0px;
@@ -48,9 +48,19 @@ strong {
 }
 
 .pao-box{
-    
+    display: flex;
+    justify-content: flex-start;
     width: 80%;
     text-align: left;
+    
+}
+
+.preco{
+    margin-left: 20px;
+}
+
+.lanche{
+margin-right: 5px;
 }
 
 #carne {
@@ -210,18 +220,19 @@ strong {
 
 #acompanhamento{
     position: absolute;
-    width: 310px;
+    width: 400px;
     height: 300px;
     left: 500px;
     top: 210px;
     background: #C4C4C4;
     text-align: center;
     border-radius: 15px;
+    margin-left: 10px;
 }
 
 .acompanhamento-titulo{
     position:center;
-    width: 310px;
+    width: 400px;
     height: 43px;
     left: 0px;
     top: 0px;
@@ -241,7 +252,7 @@ strong {
 
 #bebidas{
     position: absolute;
-    width: 218px;
+    width: 300px;
     height: 300PX;
     left: 1000px;
     top: 210px;
@@ -252,7 +263,7 @@ strong {
 
 .bebidas-titulo{
     position:center;
-    width: 218px;
+    width: 300x;
     height: 43px;
     left: 0px;
     top: 0px;

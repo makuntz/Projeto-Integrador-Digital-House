@@ -23,16 +23,20 @@ const usuarioController = {
         const { email, pswd} = req.body
         const user = await Usuario.findOne({ where: { email: email } });
         if (user === null) {
-            res.send('Usuario nao logado');
+            res.redirect('/users/naologado')
         } else {
             const resultadoSenha = bcrypt.compareSync(pswd, user.senha)
             if(resultadoSenha && email == user.email){
                 req.session.user = email
-                res.redirect('/')
+                res.redirect('/produtos1')
                 console.log(req.session)
             }
         }   
-    }
+    },
+
+    naoLogado: (req, res) => {
+        res.render('usuarioNaoLogado')
+    },
 
 }
 
