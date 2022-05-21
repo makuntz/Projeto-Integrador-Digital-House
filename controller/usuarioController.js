@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-const {sequelize, Usuario} = require('../models/index');
+const {sequelize, Usuario, Acompanhamento} = require('../models/index');
 
 
 const usuarioController = {
@@ -36,7 +36,7 @@ const usuarioController = {
 
     naoLogado: (req, res) => {
         res.render('usuarioNaoLogado')
-    },
+    }
 
 }
 
