@@ -17,11 +17,15 @@ const Lanche = (sequelize, DataTypes)=>{
             allowNull: false
         }
 
-},{
-    tableName:'Lanche',
-    timestamps:false
-})
-return lanche
+    },{
+        tableName:'Lanche',
+        timestamps:false
+    })
+
+    lanche.associate = (models => {
+        lanche.hasMany(models.Pedido, {as: 'lanche_pedido', foreignKey: 'idLanche'})
+    })
+    return lanche
 }
 
 module.exports = Lanche
