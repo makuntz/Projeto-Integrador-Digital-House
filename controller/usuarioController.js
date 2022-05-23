@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-const {sequelize, Usuario, Acompanhamento} = require('../models/index');
+const {sequelize, Usuario} = require('../models/index');
 
 
 const usuarioController = {

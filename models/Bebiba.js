@@ -1,11 +1,22 @@
 const Bebida = (sequelize, DataTypes)=>{
     let bebida = sequelize.define('Bebida',{
-       opcao:  DataTypes.STRING,
-       valor: DataTypes.DECIMAL,
-       status: DataTypes.TINYINT,
-       Pedido_idPedido: DataTypes.INTEGER,
-       Pedido_Usuario_idusuario: DataTypes.INTEGER
+        idBebida: {
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            allowNull: false,
+            autoIncrement: true
+        },
 
+        nome: {
+            type: DataTypes.STRING,
+            allowNull: false,
+ 
+        }, 
+       
+        valor:{
+            type: DataTypes.INTEGER,
+            allowNull: false
+        }
 },{
     tableName:'Bebida',
     timestamps:false

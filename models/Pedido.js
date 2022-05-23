@@ -1,12 +1,26 @@
 const Pedido = (sequelize, DataTypes)=>{
     let pedido = sequelize.define('Pedido',{
-        Usuario_idusuario: DataTypes.INTEGER,
-        Endereço_idEndereço: DataTypes.INTEGER
+        idPedido: {
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            allowNull: false,
+            autoIncrement: true
+        },
+        idEndereço : DataTypes.INTEGER,
+        idAcompanhamento: DataTypes.INTEGER,
+        idBebida: DataTypes.INTEGER,
+        idLanche: DataTypes.INTEGER,
+        idUsuario: DataTypes.INTEGER
 
 },{
-    tableName:'pedido',
+    tableName:'Pedido',
     timestamps:false
 })
+
+pedido.associate = (models => {
+    pedido.belongsTo(models.Acompanhamento, {as: 'pedido_acompanhamento', foreignKey: 'idAcompanhamento'})
+})
+
 return pedido
 }
 
