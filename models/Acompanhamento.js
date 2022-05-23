@@ -32,7 +32,7 @@ const Acompanhamento = (sequelize, DataTypes)=>{
     })
 
 
-return acompanhamento
+    return acompanhamento
 }
 
 

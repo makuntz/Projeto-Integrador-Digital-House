@@ -17,13 +17,16 @@ const Bebida = (sequelize, DataTypes)=>{
             type: DataTypes.INTEGER,
             allowNull: false
         }
-},{
-    tableName:'Bebida',
-    timestamps:false
-})
+    },{
+        tableName:'Bebida',
+        timestamps:false
+    })
 
+    bebida.associate = (models => {
+        bebida.hasMany(models.Pedido, {as: 'bebida_pedido', foreignKey: 'idBebida'})
+    })
 
-return bebida
+    return bebida
 }
 
 module.exports = Bebida
