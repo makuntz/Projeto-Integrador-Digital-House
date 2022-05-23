@@ -3,7 +3,10 @@ const Usuario = (sequelize, DataTypes)=>{
        nome:  DataTypes.STRING,
        email: DataTypes.STRING,
        senha: DataTypes.STRING,
-       telefone: DataTypes.BIGINT
+       telefone: DataTypes.BIGINT,
+       Pedido_idPedido: DataTypes.INTEGER,
+       Pedido_Usuario_idusuario: DataTypes.INTEGER,
+       Pedido_Endereço_idEndereço: DataTypes.INTEGER
 
 },{
     tableName:'Usuario',

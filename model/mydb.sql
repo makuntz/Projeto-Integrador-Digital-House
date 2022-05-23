@@ -30,20 +30,6 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Usuario` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `mydb`.`Pedido`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Pedido` (
-  `idPedido` INT NOT NULL AUTO_INCREMENT,
-  `Usuario_idusuario` INT NOT NULL,
-  PRIMARY KEY (`idPedido`, `Usuario_idusuario`),
-  INDEX `fk_Pedido_Usuario1_idx` (`Usuario_idusuario` ASC) VISIBLE,
-  CONSTRAINT `fk_Pedido_Usuario1`
-    FOREIGN KEY (`Usuario_idusuario`)
-    REFERENCES `mydb`.`Usuario` (`idusuario`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -51,11 +37,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Acompanhamento` (
   `idAcompanhamento` INT NOT NULL AUTO_INCREMENT,
-  `opcao` VARCHAR(250) NOT NULL,
+  `nome` VARCHAR(250) NOT NULL,
   `valor` DECIMAL(2,2) NOT NULL,
-  `status` TINYINT NOT NULL,
-  `Pedido_idPedido` INT NOT NULL,
-  `Pedido_Usuario_idusuario` INT NOT NULL,
   PRIMARY KEY (`idAcompanhamento`),
   INDEX `fk_Acompanhamento_Pedido1_idx` (`Pedido_idPedido` ASC, `Pedido_Usuario_idusuario` ASC) VISIBLE,
   CONSTRAINT `fk_Acompanhamento_Pedido1`

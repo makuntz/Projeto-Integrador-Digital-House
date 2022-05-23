@@ -7,6 +7,7 @@ const session = require('express-session')
 
 var indexRouter = require( "./routes/index" );
 var usersRouter = require( "./routes/users" );
+const { config } = require("process");
 
 const app = express();
 
@@ -47,3 +48,15 @@ app.use( function( err, req, res, next ) {
 } );
 
 module.exports = app;
+
+
+// const myFunction = async () => {
+// 	const {sequelize, Lanche} = require('./models/index.js');
+	
+// 	const novoAcompanhamento = await Lanche.create({
+// 	  	nome: "Heat Burguer Triplo",
+// 	  	valor: 31
+// 	})
+// 	return novoAcompanhamento
+//   }
+//   myFunction();

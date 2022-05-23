@@ -36,7 +36,7 @@ const usuarioController = {
 
     naoLogado: (req, res) => {
         res.render('usuarioNaoLogado')
-    },
+    }
 
 }
 
