@@ -16,6 +16,7 @@ const usuarioController = {
             })
         }
         criarUsuario()
+        console.log('xablauuu')
         res.redirect('/')
     },
 
