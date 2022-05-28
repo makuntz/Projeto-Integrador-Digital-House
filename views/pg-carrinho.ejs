@@ -32,15 +32,15 @@
             <ul class="lista" style="list-style-type:none;">
                 <li class="lanche">Lanche</li>
                     <ul>
-                        <li>Lanche: <%= servico.pao%></li>
+                        <li>Lanche: <%= funcoes.nomeProduto(servico.pao) %></li>
                     </ul> 
                         <li class="acompanhamento">Acompanhamento</li>
                     <ul>
-                        <li>Acompanhamento: <%= servico.acompanhamento%> </li>
+                        <li>Acompanhamento: <%= funcoes.nomeProduto(servico.acompanhamento) %> </li>
                     </ul>
                 <li class="bebida">Bebida</li>
                     <ul>
-                        <li>Bebida: <%= servico.bebidas%> </li>
+                        <li>Bebida: <%= funcoes.nomeProduto(servico.bebidas) %> </li>
                     </ul>
             </ul>
         </section>

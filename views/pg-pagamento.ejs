@@ -43,24 +43,25 @@
                 <img src="images/pg-pagamento/pedido.png" alt="" id="pedido">
                <p>Pedido:</p> 
             </div>
-            <div class="branco" id="entrega">
-                <!-- <p>Entrega</p>
-                <span></span> -->
+            <div class="branco" id="lanche">
+                <p>Lanche: <%= funcoes.nomeProduto(servico.pao)%></p>
             </div>
-            <div class="branco" id="subtotal">
-                <!-- <p>Subtotal</p>
-                <span></span> -->
+            <div class="branco" id="acompanhamento">
+                <p>Acompanhamento: <%= funcoes.nomeProduto(servico.acompanhamento)%></p>
             </div>
+            <div class="branco" id="bebida">
+                <p>Bebida: <%= funcoes.nomeProduto(servico.bebidas)%></p>
+            </div>
+            
             <hr>
             <div class="branco" id="total">
-                <!-- <p>TOTAL</p> -->
+                <p>Total: <%= funcoes.dinheiro(funcoes.precoProduto(servico.pao) + funcoes.precoProduto(servico.acompanhamento) + funcoes.precoProduto(servico.bebidas))%></p>
             </div>
         </section>
-        <span> <li>acompanhamento: <%= servico.acompanhamento%> </li></span>
-
+        
         <section class="botao">
             <div>
-                <input type="button" value="Enviar Pedido">
+                <input type="button" class="enviarPedido" value="Enviar Pedido">
             </div>
         </section>
     </main>
