@@ -15,6 +15,7 @@ const indexController = {
 
     carrinho: (req, res) => {
         servico  = req.body.servico
+        req.session.pagamento = servico;
 
         console.log(req)
         if(servico){

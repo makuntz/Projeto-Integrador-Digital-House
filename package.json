@@ -1,5 +1,5 @@
 {
-  "name": "comisebebisapp",
+  "name": "y",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -26,5 +26,17 @@
   "devDependencies": {
     "nodemon": "^2.0.15",
     "sequelize-cli": "^6.4.1"
-  }
+  },
+  "description": "## Desenvolvedores:",
+  "main": "y",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makuntz/Projeto-Integrador-Digital-House.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makuntz/Projeto-Integrador-Digital-House/issues"
+  },
+  "homepage": "https://github.com/makuntz/Projeto-Integrador-Digital-House#readme"
 }
