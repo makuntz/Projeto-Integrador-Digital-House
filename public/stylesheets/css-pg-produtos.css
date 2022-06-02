@@ -12,9 +12,23 @@ strong {
     align-items: center;
 }
 
-#container-ingredientes {
+main {
+    /* display: flex;
+    justify-content: center; */
+    flex-direction: column;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+#container-ingredientes {
+    display: flex;
+    justify-content: space-around;
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
@@ -63,15 +77,6 @@ strong {
 }
 
 #acompanhamento {
-    /* margin: 30px;
-    width: 400px;
-    height: 200px;
-    left: 500px;
-    top: 210px;
-    background: #C4C4C4;
-    text-align: center;
-    border-radius: 15px;
-    margin-left: 10px; */
     margin: 30px;
     width: 400px;
     height: 200px;
@@ -104,14 +109,6 @@ strong {
 }
 
 #bebidas {
-    /* margin: 30px;
-    width: 300px;
-    height: 200PX;
-    left: 1000px;
-    top: 210px;
-    background: #C4C4C4;
-    text-align: start;
-    border-radius: 15px; */
     margin: 30px;
     width: 400px;
     height: 200px;
@@ -143,11 +140,15 @@ strong {
     margin: 25px;
 }
 
+#botaoPagamento {
+    display: flex;
+    justify-content: space-around;
+}
+
 #irparapagamento {
+    display: flex;
     width: 13.75rem;
     height: 5rem;
-    left: 1000px;
-    top: 600px;
     background: #FFA500;
     border-radius: 15px;
     text-align: center;
@@ -167,10 +168,6 @@ strong {
     line-height: 2.5;
     font-size: larger;
     border-radius: 15px;
-}
-
-main {
-    margin-block: 50px;
 }
 
 @media only screen and (max-width: 600px) {
