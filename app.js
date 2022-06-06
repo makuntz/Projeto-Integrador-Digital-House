@@ -9,7 +9,11 @@ var indexRouter = require( "./routes/index" );
 var usersRouter = require( "./routes/users" );
 const { config } = require("process");
 
+var funcoes = require('./funcoes');
+
 const app = express();
+
+app.locals.funcoes = funcoes;
 
 // view engine setup
 app.set( "views", path.join( __dirname, "views" ) );
@@ -28,8 +32,6 @@ app.use(session({
 
 app.use( "/", indexRouter );
 app.use( "/users", usersRouter );
-
-
 
 // catch 404 and forward to error handler
 app.use( function( req, res, next ) {

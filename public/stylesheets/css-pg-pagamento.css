@@ -71,14 +71,6 @@ main{
 
 }
 
-#entrega{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    
-}
 
 #cartao{
     width: 3%;
@@ -112,23 +104,20 @@ main{
     margin-right: 2%;
 }
 
-#subtotal{
+#lanche,
+#acompanhamento,
+#bebida{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0;
     width: 100%;
-    
 }
 
-#entrega p{
+#lanche p,
+#acompanhamento p,
+#bebida p{
     margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-#subtotal p{
-    margin-top: 0.5%;
     margin-bottom: 1%;
 }
 
@@ -167,11 +156,22 @@ hr{
     background-color: #C4C4C4;
 }
 
-.botao input{
+/* .botao input{
     background-color: #FFA500;
     height: 250%;
     border-radius: 20px;
     border-width: 0;
     cursor: pointer;
+} */
+
+.enviarPedido{
+    margin-left: auto;
+    margin-right: auto;
+    background: orange;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: fit-content;
+    justify-content: center;    
 }
 

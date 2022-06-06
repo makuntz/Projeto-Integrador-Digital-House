@@ -8,22 +8,36 @@ body {
     background-size: cover;
 }
 
-
 strong {
     align-items: center;
 }
 
-
-#container-ingredientes {
-   display: flex;
-   justify-content: center;
-
+main {
+    /* display: flex;
+    justify-content: center; */
+    flex-direction: column;
+    margin-bottom: 150px;
+    margin-top: 150px;
 }
 
-#pao{
-    position: absolute;
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container-ingredientes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#pao {
+    margin: 30px;
     width: 400px;
-    height: 300px;
+    height: 200px;
     left: 17px;
     top: 210px;
     background: #C4C4C4;
@@ -31,8 +45,8 @@ strong {
     border-radius: 15px;
 }
 
-.pao-titulo{
-    position:center;
+.pao-titulo {
+    position: center;
     width: 400px;
     height: 43px;
     left: 0px;
@@ -41,197 +55,40 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height:2.5;
+    line-height: 2.5;
     font-size: larger;
     border-radius: 15px;
-
 }
 
-.pao-box{
+.pao-box {
     display: flex;
     justify-content: flex-start;
     width: 80%;
     text-align: left;
-    
+    margin: 18px;
 }
 
-.preco{
+.preco {
     margin-left: 20px;
 }
 
-.lanche{
-margin-right: 5px;
+.lanche {
+    margin-right: 5px;
 }
 
-#carne {
-    position: absolute;
-    width: 288px;
-    height: 350px;
-    left: 255px;
-    top: 210px;
-    background: #C4C4C4;
-    text-align:start;
-    border-radius: 15px;
-}
-
-.carne-titulo{
-    position:center;
-    width: 288px;
-    height: 43px;
-    left: 0px;
-    top: 0px;
-    background: #FFA500;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height:2.5;
-    font-size: larger;
-    border-radius: 15px;
-} 
-
-.carne-box{
-    width: 90%;
-    text-align: left;
-}
-
-#pontodacarne{
-    position: absolute;
-    width: 13.625rem;
-    height: 12.25rem;
-    left: 285px;
-    top: 585px;
-    background: #C4C4C4;
-    text-align: start;  
-    border-radius: 15px;
-}
-
-.ponto-titulo{
-    position:center;
-    width: 218px;
-    height: 43px;
-    left: 0px;
-    top: 0px;
-    background: #FFA500;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height:2.5;
-    font-size: larger;
-    border-radius: 15px;
-}
-
-.ponto-box{
-    width: 90%;
-    text-align: left;
-}
-
-#queijo{
-    position:absolute;
-    width: 13.625rem;
-    height: 270px;
-    left: 585px;
-    top: 210px;
-    background: #C4C4C4;
-    text-align: start;
-    border-radius: 15px;
-}
-
-.queijo-titulo{
-    position:center;
-    width: 218px;
-    height: 43px;
-    left: 0px;
-    top: 0px;
-    background: #FFA500;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height:2.5;
-    font-size: larger;
-    border-radius: 15px;
-}
-
-.queijo-box{
-    width: 90%;
-    text-align: left;
-}
-
-#molho{
-    position: absolute;
-    width: 240px;
-    height: 16.75rem;
-    left: 560px;
-    top: 510px;
-    background: #C4C4C4;
-    text-align: start;
-    border-radius: 15px;
-}
-
-.molho-titulo{
-    position:center;
-    width: 240px;
-    height: 43px;
-    left: 0px;
-    top: 0px;
-    background: #FFA500;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height:2.5;
-    font-size: larger;
-    border-radius: 15px;
-}
-
-.molho-box{
-    width: 100%;
-    text-align: left;
-}
-
-#adicionais{
-    position: absolute;
-    width: 13.625rem;
-    height: 35.75rem;
-    left: 850px;
-    top: 210px;
-    background: #C4C4C4;
-    text-align: start;
-    border-radius: 15px;
-}
-
-.adicionais-titulo{
-    position:center;
-    width: 218px;
-    height: 43px;
-    left: 0px;
-    top: 0px;
-    background: #FFA500;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height:2.5;
-    font-size: larger;
-    border-radius: 15px;
-}
-
-.adicionais-box{
-    width: 100%;
-    text-align: left;
-}
-
-#acompanhamento{
-    position: absolute;
+#acompanhamento {
+    margin: 30px;
     width: 400px;
-    height: 300px;
-    left: 500px;
+    height: 200px;
+    left: 17px;
     top: 210px;
     background: #C4C4C4;
-    text-align: center;
+    text-align: start;
     border-radius: 15px;
-    margin-left: 10px;
 }
 
-.acompanhamento-titulo{
-    position:center;
+.acompanhamento-titulo {
+    position: center;
     width: 400px;
     height: 43px;
     left: 0px;
@@ -240,29 +97,30 @@ margin-right: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height:2.5;
+    line-height: 2.5;
     font-size: larger;
     border-radius: 15px;
 }
 
-.acompanhamento-box{
+.acompanhamento-box {
     width: 100%;
     text-align: left;
+    margin: 25px;
 }
 
-#bebidas{
-    position: absolute;
-    width: 300px;
-    height: 300PX;
-    left: 1000px;
+#bebidas {
+    margin: 30px;
+    width: 400px;
+    height: 200px;
+    left: 17px;
     top: 210px;
     background: #C4C4C4;
     text-align: start;
     border-radius: 15px;
 }
 
-.bebidas-titulo{
-    position:center;
+.bebidas-titulo {
+    position: center;
     width: 300x;
     height: 43px;
     left: 0px;
@@ -271,29 +129,34 @@ margin-right: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height:2.5;
+    line-height: 2.5;
     font-size: larger;
     border-radius: 15px;
 }
 
-.bebidas-box{
+.bebidas-box {
     width: 100%;
     text-align: left;
+    margin: 25px;
 }
 
-#irparapagamento{
-    position: absolute;
+#botaoPagamento {
+    display: flex;
+    justify-content: space-around;
+}
+
+#irparapagamento {
+    display: flex;
     width: 13.75rem;
     height: 5rem;
-    left: 1000px;
-    top:600px;
     background: #FFA500;
     border-radius: 15px;
-    text-align:center;
+    text-align: center;
     align-items: center;
 }
-.pagamento-titulo{
-    position:center;
+
+.pagamento-titulo {
+    position: center;
     width: 218px;
     height: 43px;
     left: 0px;
@@ -302,11 +165,19 @@ margin-right: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height:2.5;
+    line-height: 2.5;
     font-size: larger;
     border-radius: 15px;
 }
 
-main {
-    margin-block:650px;
+@media only screen and (max-width: 600px) {
+    main {
+        margin-block: 10px;
+    }
+
+    #container-ingredientes {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
 }
