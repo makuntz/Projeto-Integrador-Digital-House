@@ -9,11 +9,11 @@ var indexRouter = require( "./routes/index" );
 var usersRouter = require( "./routes/users" );
 const { config } = require("process");
 
-var funcoes = require('./funcoes');
+// var funcoes = require('./funcoes');
 
 const app = express();
 
-app.locals.funcoes = funcoes;
+// app.locals.funcoes = funcoes;
 
 // view engine setup
 app.set( "views", path.join( __dirname, "views" ) );

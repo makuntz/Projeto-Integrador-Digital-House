@@ -9,25 +9,12 @@
     <link rel="stylesheet" href="stylesheets/css-pg-produtos.css">
     <link rel="stylesheet" href="stylesheets/css-header.css">
     <link rel="stylesheet" href="stylesheets/css-footer.css">
-    <!-- <script>
-        const ingredientes = []
-        //SE FOR RODAR ESSA FUNCAO, NAO ESQUEDCER DE CHAMAR ONCLICK NO BUTTON
-        // function enviar (){
-        //     const item1 = document.querySelector('input[name="pao"]:checked').value;
-        //     const item2 = document.querySelector('input[name="carne"]:checked').value;
-        //     const item3 = document.querySelector('input[name="ponto"]:checked').value;
-
-            
-        //     ingredientes.push(item1, item2, item3)
-        //     console.log(ingredientes)
-        // }
-        
-    </script> -->
+   
 
 </head>
 <%- include("card-login-e-registro"); %>
 
-    <body background="images/pg-home/Banner-Promocao-3-ComisBebis.jpg">
+    <body >
         <%- include('./partials/header') %>
 
             <main>
@@ -37,19 +24,19 @@
                         <div class="boxItens" id="pao">
                             <div class="pao-titulo"> <strong>LANCHES</strong> </div>
                             <div class="pao-box">
-                                <input type="radio" id="PÃO TRADICIONAL" class="lanche" name="pao" value="l1" checked>
+                                <input type="radio" id="PÃO TRADICIONAL" class="lanche" name="pao" value="BIG HEAT - R$ 22,00" checked>
                                 <label for="pao"> BIG HEAT - R$ 22,00</label>
                             </div>
                             <div class="pao-box">
-                                <input type="radio" id="PÃO AMERICANO" class="lanche" name="pao" value="l2">
+                                <input type="radio" id="PÃO AMERICANO" class="lanche" name="pao" value="HEAT BURGUER SIMPLES - R$ 24,00">
                                 <label for="pao">HEAT BURGUER SIMPLES - R$ 24,00</label>
                             </div>
                             <div class="pao-box">
-                                <input type="radio" id="PÃO ITALIANO" class="lanche" name="pao" value="l3">
+                                <input type="radio" id="PÃO ITALIANO" class="lanche" name="pao" value="HEAT BURGUER DUPLO - R$ 27,00">
                                 <label for="pao">HEAT BURGUER DUPLO - R$ 27,00</label>
                             </div>
                             <div class="pao-box">
-                                <input type="radio" id="PÃO BRIOCHE" class="lanche" name="pao" value="l4">
+                                <input type="radio" id="PÃO BRIOCHE" class="lanche" name="pao" value="HEAT BURGUER TRIPLO - R$ 31,00">
                                 <label for="pao">HEAT BURGUER TRIPLO - R$ 31,00</label>
                             </div>
                         </div>
@@ -59,16 +46,16 @@
                                 <strong>ACOMPANHAMENTO</strong>
                             </div>
                             <div class="acompanhamento-box">
-                                <input type="radio" id="BATATA RUSTICA SIMPLES" name="acompanhamento" value="a1"
+                                <input type="radio" id="BATATA RUSTICA SIMPLES" name="acompanhamento" value="BATATA RUSTICA SIMPLES - R$ 21,00"
                                     checked>
                                 <label for="acompanhamento">BATATA RUSTICA SIMPLES - R$ 21,00</label>
                             </div>
                             <div class="acompanhamento-box">
-                                <input type="radio" id="FRITAS PALITO SIMPLES" name="acompanhamento" value="a2">
+                                <input type="radio" id="FRITAS PALITO SIMPLES" name="acompanhamento" value="FRITAS PALITO SIMPLES - R$ 18,00">
                                 <label for="acompanhamento">FRITAS PALITO SIMPLES - R$ 18,00</label>
                             </div>
                             <div class="acompanhamento-box">
-                                <input type="radio" id="FRITAS PALITO CHEDDAR E BACON" name="acompanhamento" value="a3">
+                                <input type="radio" id="FRITAS PALITO CHEDDAR E BACON" name="acompanhamento" value="FRITAS PALITO CHEDDAR E BACON - R$ 22,00">
                                 <label for="acompanhamento">FRITAS PALITO CHEDDAR - R$ 22,00</label>
                             </div>
                         </div>
@@ -78,15 +65,16 @@
                                 <strong>BEBIDAS</strong>
                             </div>
                             <div class="bebidas-box">
-                                <input type="radio" id="COCA COLA" name="bebidas" value="b1" checked>
+                                <input type="radio" id="COCA COLA" name="bebidas" value="COCA COLA - R$ 5,00" checked>
                                 <label for="bebidas">COCA COLA - R$ 5,00</label>
+                                
                             </div>
                             <div class="bebidas-box">
-                                <input type="radio" id="GUARANA" name="bebidas" value="b2">
+                                <input type="radio" id="GUARANA" name="bebidas" value="GUARANA - R$ 5,00">
                                 <label for="bebidas">GUARANA - R$ 5,00</label>
                             </div>
                             <div class="bebidas-box">
-                                <input type="radio" id="SUCO DE LARANJA" name="bebidas" value="b3">
+                                <input type="radio" id="SUCO DE LARANJA" name="bebidas" value="SUCO DE LARANJA - R$ 8,00">
                                 <label for="bebidas">SUCO DE LARANJA - R$ 8,00</label>
                             </div>
                         </div>

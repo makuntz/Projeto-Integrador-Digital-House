@@ -13,50 +13,40 @@
 <body>
     <%- include('./partials/header') %>
 
-    <!-- <script>
-        function pagar() {
-            const teste = document.getElementById('bebida')
-            fetch('http://localhost:3000/pagamento', {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({bebida: teste})
-            }).then(res => {
-            console.log("Request complete! response:", res);
-            });
-        } -->
-    <!-- </script> -->
     <main>
-        <section>
-            <ul class="lista" style="list-style-type:none;">
-                <li class="lanche">Lanche</li>
-                    <ul>
-                        <li>Lanche: <%= funcoes.nomeProduto(servico.pao) %></li>
-                    </ul> 
-                        <li class="acompanhamento">Acompanhamento</li>
-                    <ul>
-                        <li>Acompanhamento: <%= funcoes.nomeProduto(servico.acompanhamento) %> </li>
-                    </ul>
-                <li class="bebida">Bebida</li>
-                    <ul>
-                        <li>Bebida: <%= funcoes.nomeProduto(servico.bebidas) %> </li>
-                    </ul>
-            </ul>
-        </section>
-        
-        <section id="botao">
-            <a href="/pagamento"><button class="pagamento">ir para o pagamento</button></a>
-            <ul class = "alterar">
-                <a href="/produtos1"><li class = "alterar1">Alterar pedido</li></a>
-            </ul>
+        <form action="/sucesso" method="POST">
+            <section>
+                <ul class="lista" style="list-style-type:none;">
+                    <li class="lanche">Lanche</li>
+                        <ul>
+                            <input type="text" name="pao" value="<%=servico.pao%>" placeholder="<%=servico.pao%>" >
+                        </ul> 
+                            <li class="acompanhamento">Acompanhamento</li>
+                        <ul>
+                            <input type="text" name="acompanhamento" value="<%=servico.acompanhamento%>" placeholder="<%=servico.acompanhamento%>" >
+                        </ul>
+                    <li class="bebida">Bebida</li>
+                        <ul>
+                            <input type="text" name="bebida" value="<%=servico.bebidas%>" placeholder="<%=servico.bebidas%>" >
+                        </ul>
+                </ul>
+            </section>
+
+            <section class="total">
+                <input  value="TOTAL   =   R$ <%=servico.valorTotal%>"   name="total" >
+            </section>
             
-            <!-- <button class="pagamento" type="button">Ir para Pagamento</button> -->
-        </section>
+            <section id="botao">
+                <a href="/produtos1"><button class = "alterar1">Alterar pedido</button></a>
+                <button class="pagamento">Enviar Pedido</button>
+            </section>
+        </form>
     </main>
     <%- include('./partials/footer.ejs') %> 
-
 </body>
+<script>
+
+</script>
 </html>
 
 
