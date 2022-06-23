@@ -7,28 +7,23 @@ const Pedido = (sequelize, DataTypes)=>{
             autoIncrement: true
         },
 
-        idEndereço: {
-            type: DataTypes.INTEGER,
+        acompanhamento: {
+            type: DataTypes.STRING,
             allowNull: false
         },
 
-        idAcompanhamento: {
-            type: DataTypes.INTEGER,
+        bebida: {
+            type: DataTypes.STRING,
             allowNull: false
         },
 
-        idBebida: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-
-        idLanche: {
-            type: DataTypes.INTEGER,
+        pao: {
+            type: DataTypes.STRING,
             allowNull: false
         },
         
-        idUsuario: {
-            type: DataTypes.INTEGER,
+        valor: {
+            type: DataTypes.STRING,
             allowNull: false
         }
 
@@ -37,13 +32,13 @@ const Pedido = (sequelize, DataTypes)=>{
         timestamps:false
     })
 
-    pedido.associate = (models => {
-        pedido.belongsTo(models.Acompanhamento, {as: 'pedido_acompanhamento', foreignKey: 'idAcompanhamento'})
-        pedido.belongsTo(models.Bebida, {as: 'pedido_bebida', foreignKey: 'idBebida'})
-        pedido.belongsTo(models.Lanche, {as: 'lanche_bebida', foreignKey: 'idLanche'})
-        pedido.belongsTo(models.Usuario, {as: 'usuario_bebida', foreignKey: 'idUsuario'})
-        pedido.belongsTo(models.Endereco, {as: 'endereco_bebida', foreignKey: 'idEndereco'})
-    })
+    // pedido.associate = (models => {
+    //     pedido.belongsTo(models.Acompanhamento, {as: 'pedido_acompanhamento', foreignKey: 'idAcompanhamento'})
+    //     pedido.belongsTo(models.Bebida, {as: 'pedido_bebida', foreignKey: 'idBebida'})
+    //     pedido.belongsTo(models.Lanche, {as: 'lanche_bebida', foreignKey: 'idLanche'})
+    //     pedido.belongsTo(models.Usuario, {as: 'usuario_bebida', foreignKey: 'idUsuario'})
+    //     pedido.belongsTo(models.Endereco, {as: 'endereco_bebida', foreignKey: 'idEndereco'})
+    // })
 
     return pedido
 }
