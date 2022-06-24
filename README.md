@@ -1,53 +1,48 @@
 # Projeto Integrador Digital House
 
-## Desenvolvedores:
+##Esse projeto utiliza os seguintes:
 
-[![](https://github.com/blocodenotas-dev/caderno0/blob/main/46264822%20(2).png?raw=true)](https://github.com/makuntz/)
-- ### ${ [Maíra Kuntz](https://github.com/makuntz/) }
-~~~~
- // em andamento
- pagamento
-~~~~
+    . NodeJs
+    . Express
+    . Ejs
+    . Sequelize
+    . MySQL
+    
+É necessário ter o NodeJs, mySql e uma interface como Workbench pré instaldo para a execução do projeto. Outras dependencias são geradas pelo gerenciador de pacotes NPM.
 
-[![](https://github.com/blocodenotas-dev/caderno0/blob/main/46264822%20(4).png?raw=true)](https://github.com/rcthomazelli/)
-- ### ${ [Ricardo C. Thomazelli](https://github.com/rcthomazelli/) }
-~~~~
- // em andamento
- home
-~~~~
 
-[![](https://github.com/blocodenotas-dev/caderno0/blob/main/46264822%20(3).png?raw=true)](https://github.com/pedromtoledo/)
-- ### ${ [pedromtoledo](https://github.com/pedromtoledo/) }
-~~~~
- // em andamento
- tabela de itens
-~~~~
+##Execução
 
-[![](https://github.com/blocodenotas-dev/caderno0/blob/main/46264822.png?raw=true)](https://github.com/Ceo-Sammarco/)
-- ### ${ [Anselmo Sammarco Nunes](https://github.com/Ceo-Sammarco/) }
-~~~~
- // em andamento
- card login
-~~~~
+1. Clone este repositório:
 
-[![](https://github.com/blocodenotas-dev/caderno0/blob/main/46264822%20(5).png?raw=true)](https://github.com/alanhspinheiro/)
-- ### ${ [Alan Pinheiro](https://github.com/alanhspinheiro/) }
-~~~~
- // em andamento
- card cadastro
-~~~~
+    https://github.com/makuntz/Projeto-Integrador-Digital-House
 
-[![](https://raw.githubusercontent.com/blocodenotas-dev/caderno0/main/46264822%20(1).png)](https://github.com/TiMadureira/)
-- ### ${ [TiMadureira](https://github.com/TiMadureira/) }
-~~~~
- // em andamento
- página de checkout
-~~~~
+2. Instale as dependencias do projeto:
 
----
-<p align="left"><img src="https://komarev.com/ghpvc/?username=ceo" alt="ceo" /></p>
+    npm install
 
-```
-/* projeto em andamento */ 
-```
+3. Configurar o banco:
+
+    configurar usuário no mysql e conexão no workbench ou outra interface paralela
+
+    importar o script que está na pasta model para o workbench ou outra interface paralela
+
+
+    Para importar o script, pode seguir o passo a passo do link abaixo:
+
+    https://help.umbler.com/hc/pt-br/articles/202385865-MySQL-Importando-Exportando-um-banco-de-dados    
+
+
+4. Rode o comando abaixo para iniciar o server:
+
+    npm run start
+
+    Esse comando compila o projeto e inicializa o server em http://localhost:3000
+
+
+
+
+
+
+
 
