@@ -1,6 +1,6 @@
 # Projeto Integrador Digital House
 
-##Esse projeto utiliza os seguintes:
+## Esse projeto utiliza os seguintes:
 
     . NodeJs
     . Express
@@ -11,7 +11,7 @@
 É necessário ter o NodeJs, mySql e uma interface como Workbench pré instaldo para a execução do projeto. Outras dependencias são geradas pelo gerenciador de pacotes NPM.
 
 
-##Execução
+## Execução
 
 1. Clone este repositório:
 
