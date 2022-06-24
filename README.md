@@ -39,10 +39,3 @@
 
     Esse comando compila o projeto e inicializa o server em http://localhost:3000
 
-
-
-
-
-
-
-
